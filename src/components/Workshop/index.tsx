@@ -136,15 +136,21 @@ const Workshop = (props) => {
           <Grid container spacing={2} alignItems="center">
             <Grid item xs={isMobile ? 12 : 7}>
               <Box
-                component="img"
-                src={workshops[activeWs].locationimage}
                 sx={{
-                  width: "100%",
-                }}
-              />
+                  height: 700,
+                }}>
+                <Box
+                  component="img"
+                  src={workshops[activeWs].locationimage}
+                  sx={{
+                    width: "100%",
+                    height: "100%"
+                  }}
+                />
+              </Box>
             </Grid>
             {!isMobile && (
-              <Grid item xs={5} sx={{ mt: 9 }}>
+              <Grid item xs={5}>
                 <Stack>
                   {questions.map((question, index) => (
                     <Typography
