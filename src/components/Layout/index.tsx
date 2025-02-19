@@ -74,11 +74,11 @@ const Layout = (props) => {
                     <Typography
                       component="h6"
                       sx={{
-                        fontSize: isMobile ? 35 : 16,
+                        fontSize: isMobile ? 40 : 20,
                         fontWeight: 700,
                       }}
                     >
-                      TrustAI WS
+                      TrustAI Workshop
                     </Typography>
                   </Stack>
                 </Link>
@@ -148,7 +148,7 @@ const Layout = (props) => {
                       textAlign="center"
                       sx={customStyles.wsnameMenuStyle}
                     >
-                      Previous Workshops
+                      All Workshops
                     </Typography>
                   </MenuItem>
                   <Divider sx={{ backgroundColor: "#6888ab" }} />
