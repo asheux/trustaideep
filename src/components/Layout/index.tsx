@@ -5,21 +5,14 @@ import AppBar from "@mui/material/AppBar";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import Logout from "@mui/icons-material/Logout";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import PlaylistAddIcon from "@mui/icons-material/PlaylistAdd";
 import Stack from "@mui/material/Stack";
 import Divider from "@mui/material/Divider";
-import Chip from "@mui/material/Chip";
 import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Fab from "@mui/material/Fab";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import { connect } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 // App related imports
@@ -32,23 +25,30 @@ import { isMobile } from "src/helpers";
 
 const settings = ["Workshop2023", "Workshop2022"];
 
-const Layout = props => {
+const Layout = (props) => {
   const { children } = props;
   const [anchorElWs, setAnchorElWs] = useState(null);
-  
+  const [url, setUrl] = useState("");
+
   const navigate = useNavigate();
 
-  const handleOpenWsMenu = event => {
+  const handleOpenWsMenu = (event) => {
     setAnchorElWs(event.currentTarget);
   };
 
   const handleCloseWsMenu = () => {
     setAnchorElWs(null);
   };
-  
+
   const handleOpenSchedule = () => {
-    navigate("/schedule")
-  }
+    navigate("/schedule");
+  };
+
+  useEffect(() => {
+    if (url) {
+      navigate(url);
+    }
+  }, [url]);
 
   return (
     <React.Fragment>
@@ -59,7 +59,8 @@ const Layout = props => {
             boxShadow: 1,
             backgroundColor: "#445029",
             zIndex: 1302,
-          }}>
+          }}
+        >
           <Container maxWidth="xl">
             <StyledToolbar disableGutters sx={isMobile ? { height: 140 } : {}}>
               <Box component="div" sx={customStyles.taidName}>
@@ -68,27 +69,30 @@ const Layout = props => {
                   style={{
                     textDecoration: "none",
                     color: "#f3f3f3",
-                  }}>
+                  }}
+                >
                   <Stack direction="row" alignItems="center">
                     <Typography
                       component="h6"
                       sx={{
                         fontSize: isMobile ? 35 : 16,
                         fontWeight: 700,
-                      }}>
+                      }}
+                    >
                       TrustAI WS
                     </Typography>
                   </Stack>
                 </Link>
               </Box>
-              <Box sx={{ flexGrow: 0, mr: 2 }}>
+              <Box sx={{ flexGrow: 0, mr: 3 }}>
                 <Typography
                   onClick={handleOpenSchedule}
                   sx={{
                     ...customStyles.wsProfileName,
                     color: "white",
-                    cursor: "pointer"
-                  }}>
+                    cursor: "pointer",
+                  }}
+                >
                   Schedule
                 </Typography>
               </Box>
@@ -100,18 +104,18 @@ const Layout = props => {
                   sx={{
                     cursor: "pointer",
                   }}
-                  onClick={handleOpenWsMenu}>
+                  onClick={handleOpenWsMenu}
+                >
                   <Typography
                     sx={{
                       ...customStyles.wsProfileName,
                       color: "white",
-                    }}>
+                    }}
+                  >
                     Workshops
                   </Typography>
                   {!anchorElWs ? (
-                    <ArrowDropDownIcon
-                      sx={customStyles.arrowDropIcon}
-                    />
+                    <ArrowDropDownIcon sx={customStyles.arrowDropIcon} />
                   ) : (
                     <ArrowDropUpIcon sx={customStyles.arrowDropIcon} />
                   )}
@@ -129,7 +133,6 @@ const Layout = props => {
                     horizontal: "right",
                   }}
                   sx={{
-                    zIndex: 1302,
                     mt: isMobile ? "65px" : "20px",
                   }}
                   open={Boolean(anchorElWs)}
@@ -139,33 +142,33 @@ const Layout = props => {
                       ...customStyles.menuPaperProps,
                       ...customStyles.menuPaperPropsBefore,
                     },
-                  }}>
+                  }}
+                >
                   <MenuItem>
                     <Typography
                       textAlign="center"
-                      sx={customStyles.wsnameMenuStyle}>
+                      sx={customStyles.wsnameMenuStyle}
+                    >
                       Previous Workshops
                     </Typography>
                   </MenuItem>
                   <Divider sx={{ backgroundColor: "#6888ab" }} />
-                  {settings.map(setting => (
-                    <Link
+                  {settings.map((setting) => (
+                    <MenuItem
                       key={setting}
-                      style={{
-                        color: "inherit",
-                        textDecoration: "none",
+                      sx={{ width: "300px" }}
+                      onClick={() => {
+                        handleCloseWsMenu();
+                        setUrl(`/${setting.toLowerCase().replace(" ", "")}`);
                       }}
-                      to={`/${setting.toLowerCase().replace(" ", "")}`}>
-                      <MenuItem
-                        sx={{ width: "300px" }}
-                        onClick={handleCloseWsMenu}>
-                        <Typography
-                          textAlign="center"
-                          sx={customStyles.settingStyles}>
-                          {setting}
-                        </Typography>
-                      </MenuItem>
-                    </Link>
+                    >
+                      <Typography
+                        textAlign="center"
+                        sx={customStyles.settingStyles}
+                      >
+                        {setting}
+                      </Typography>
+                    </MenuItem>
                   ))}
                 </Menu>
               </Box>
@@ -184,7 +187,8 @@ const Layout = props => {
               "&:hover": {
                 backgroundColor: "#445029",
               },
-            }}>
+            }}
+          >
             <KeyboardArrowUpIcon sx={{ color: "#ffffff" }} />
           </Fab>
         </ScrollTop>
@@ -194,4 +198,4 @@ const Layout = props => {
   );
 };
 
-export default Layout
+export default Layout;

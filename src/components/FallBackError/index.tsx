@@ -4,7 +4,7 @@ import { Container, Typography } from "@mui/material";
 // App related imports
 import { isMobile } from "src/helpers";
 
-const FallBackError = props => {
+const FallBackError = (props) => {
   const { status, message } = props;
 
   return (

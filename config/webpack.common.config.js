@@ -129,7 +129,6 @@ module.exports = () => {
       alias: {
         src: path.src,
         components: path.components,
-        actions: path.actions,
         assets: path.assets,
       },
     },

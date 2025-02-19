@@ -96,7 +96,6 @@ const commonThemes = {
   },
 };
 
-
 const tTheme = createTheme({
   palette: {
     mode: "light",

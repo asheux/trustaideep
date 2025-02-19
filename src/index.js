@@ -4,7 +4,6 @@ import { createRoot } from "react-dom/client";
 import AppRoutes from "src/routes";
 import { TaidiTheme } from "src/commons/Themes";
 
-
 const renderApp = () => {
   const container = document.getElementById("root");
   const root = createRoot(container);
