@@ -136,7 +136,7 @@ const Schedule = () => {
                     <Typography
                       sx={{
                         fontWeight: 500,
-                        fontSize: isMobile ? 27 : 15
+                        fontSize: isMobile ? 27 : 18
                       }}
                     >
                       {sch.title}

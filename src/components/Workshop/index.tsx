@@ -218,7 +218,7 @@ const Workshop = (props) => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            height: isMobile ? 100 : 50,
+            height: isMobile ? 100 : 60,
             mb: 2,
           }}
         >
@@ -343,7 +343,7 @@ const Workshop = (props) => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            height: isMobile ? 100 : 50,
+            height: isMobile ? 100 : 60,
             mb: 2,
           }}
         >
@@ -530,7 +530,7 @@ const Workshop = (props) => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            height: isMobile ? 100 : 50,
+            height: isMobile ? 100 : 60,
             mb: 2,
           }}
         >
@@ -648,7 +648,7 @@ const Workshop = (props) => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            height: isMobile ? 100 : 50,
+            height: isMobile ? 100 : 60,
             mb: 2,
           }}
         >
