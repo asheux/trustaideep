@@ -3,6 +3,8 @@ import { Box, Fade, Toolbar } from "@mui/material";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import { styled } from "@mui/material/styles";
 
+import { isMobile } from "src/helpers";
+
 interface Props {
   children: React.ReactElement;
 }
@@ -41,10 +43,10 @@ export const ScrollTop = (props: Props) => {
         role="presentation"
         sx={{
           position: "fixed",
-          bottom: 40,
+          bottom: isMobile ? 50 : 40,
+          zIndex: 1302,
           right: 30,
-        }}
-      >
+        }}>
         {children}
       </Box>
     </Fade>

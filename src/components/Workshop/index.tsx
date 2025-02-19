@@ -76,7 +76,7 @@ const Workshop = (props) => {
           sx={{
             backgroundColor: "#e6ecda",
             pt: 2,
-            mt: -2,
+            mt: isMobile ? 10 : -2,
             display: "flex",
             justifyContent: "center",
             alignItems: "center",

@@ -46,7 +46,7 @@ const Schedule = () => {
           sx={{
             backgroundColor: "#e6ecda",
             pt: 2,
-            mt: -2,
+            mt: isMobile ? 10 : -2,
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -72,7 +72,7 @@ const Schedule = () => {
           </Stack>
         </Box>
         <Container sx={{ mt: isMobile ? 4 : 2, mb: isMobile ? 8 : 2 }}>
-          <Stack direction="row" alignItems="center" spacing={2}>
+          <Stack direction="row" alignItems="center" spacing={2} mt={2}>
             {wsyears.map((wssy) => (
               <Box
                 key={wssy}
@@ -84,6 +84,7 @@ const Schedule = () => {
                   color: active === wssy ? "white" : "#445029",
                   p: 1,
                   width: isMobile ? 100 : 50,
+                  zIndex: 1302,
                   textAlign: "center",
                   cursor: "pointer",
                   "&:hover": {
