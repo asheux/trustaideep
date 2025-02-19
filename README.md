@@ -1,11 +1,11 @@
-# Quest List
+# Trust AI Deep Learning
 
 ## Run The Project Locally
 
 ### Clone
 
 ```
-$ git clone https://github.com/TrustAIdeepIndaba/trustaideep.git
+$ git clone https://github.com/asheux/trustaideep.git
 $ cd trustaideep
 ```
 
@@ -14,4 +14,3 @@ $ cd trustaideep
 ```
 $ yarn install && yarn start
 ```
-# Trust AI Deep Learning
