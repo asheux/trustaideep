@@ -107,12 +107,12 @@ const Schedule = () => {
               <Box sx={{ mb: 1 }}>
                 <Divider />
               </Box>
-              <Grid container alignItems="start">
+              <Grid container alignItems="start" spacing={isMobile ? 10 : 2}>
                 <Grid item xs={3}>
                   <Stack direction="row" alignItems="center">
                     <Typography
                       sx={{
-                        fontSize: isMobile ? 27 : 16,
+                        fontSize: isMobile ? 27 : 15,
                       }}
                     >
                       {sch.starttime}
@@ -122,7 +122,7 @@ const Schedule = () => {
                         <HorizontalRuleIcon />
                         <Typography
                           sx={{
-                            fontSize: isMobile ? 27 : 16,
+                            fontSize: isMobile ? 27 : 15,
                           }}
                         >
                           {sch.endtime}
@@ -134,9 +134,9 @@ const Schedule = () => {
                 <Grid item xs={9}>
                   <Stack>
                     <Typography
-                      variant={isMobile ? "h4" : "h6"}
                       sx={{
                         fontWeight: 500,
+                        fontSize: isMobile ? 27 : 15
                       }}
                     >
                       {sch.title}
@@ -145,7 +145,7 @@ const Schedule = () => {
                       <Typography
                         sx={{
                           color: "#90a959",
-                          fontSize: isMobile ? 27 : 14,
+                          fontSize: isMobile ? 27 : 13,
                         }}
                       >
                         {sch.speakername}
