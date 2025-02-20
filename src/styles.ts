@@ -86,4 +86,10 @@ export const customStyles = {
     color: "#90a959",
     cursor: "pointer",
   },
+  mediaStyles: {
+    height: 300,
+    width: "100%",
+    objectFit: "cover",
+    objectPosition: "center",
+  },
 };

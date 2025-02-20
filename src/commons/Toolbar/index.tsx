@@ -46,7 +46,8 @@ export const ScrollTop = (props: Props) => {
           bottom: isMobile ? 50 : 40,
           zIndex: 1302,
           right: 30,
-        }}>
+        }}
+      >
         {children}
       </Box>
     </Fade>

@@ -23,7 +23,20 @@ import { PreviousRouteProvider } from "src/routes/context";
 import { customStyles } from "src/styles";
 import { isMobile } from "src/helpers";
 
-const settings = ["Workshop2023", "Workshop2022"];
+const settings = [
+  {
+    name: "TrustAI @ IJCAI 2024",
+    path: "TrustAIIJCAI2024",
+  },
+  {
+    name: "TrustAI @ Indaba 2023",
+    path: "TrustAIIndaba2023",
+  },
+  {
+    name: "TrustAI @ Indaba 2022",
+    path: "TrustAIIndaba2022",
+  },
+];
 
 const Layout = (props) => {
   const { children } = props;
@@ -111,7 +124,7 @@ const Layout = (props) => {
                       color: "white",
                     }}
                   >
-                    Workshops
+                    Editions
                   </Typography>
                   {!anchorElWs ? (
                     <ArrowDropDownIcon sx={customStyles.arrowDropIcon} />
@@ -148,24 +161,26 @@ const Layout = (props) => {
                       textAlign="center"
                       sx={customStyles.wsnameMenuStyle}
                     >
-                      All Workshops
+                      All Editions
                     </Typography>
                   </MenuItem>
                   <Divider sx={{ backgroundColor: "#6888ab" }} />
                   {settings.map((setting) => (
                     <MenuItem
-                      key={setting}
+                      key={setting.path}
                       sx={{ width: "300px" }}
                       onClick={() => {
                         handleCloseWsMenu();
-                        setUrl(`/${setting.toLowerCase().replace(" ", "")}`);
+                        setUrl(
+                          `/${setting.path.toLowerCase().replace(" ", "")}`,
+                        );
                       }}
                     >
                       <Typography
                         textAlign="center"
                         sx={customStyles.settingStyles}
                       >
-                        {setting}
+                        {setting.name}
                       </Typography>
                     </MenuItem>
                   ))}

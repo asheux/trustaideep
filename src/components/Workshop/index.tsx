@@ -138,13 +138,14 @@ const Workshop = (props) => {
               <Box
                 sx={{
                   height: 700,
-                }}>
+                }}
+              >
                 <Box
                   component="img"
                   src={workshops[activeWs].locationimage}
                   sx={{
                     width: "100%",
-                    height: "100%"
+                    height: "100%",
                   }}
                 />
               </Box>
@@ -253,11 +254,7 @@ const Workshop = (props) => {
                     <Box
                       component="img"
                       src={speaker.image}
-                      sx={{
-                        width: isMobile ? 400 : 200,
-                        height: isMobile ? 400 : 200,
-                        borderRadius: 50,
-                      }}
+                      sx={customStyles.mediaStyles}
                     />
                   </Box>
                   <Stack>
