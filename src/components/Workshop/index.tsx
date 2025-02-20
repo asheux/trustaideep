@@ -372,7 +372,7 @@ const Workshop = (props) => {
                   {workshops[activeWs].cfp?.title}
                 </Typography>
                 {workshops[activeWs].cfp?.description && (
-                  <Typography sx={{ fontSize: 15 }}>
+                  <Typography sx={{ fontSize: isMobile ? 30 : 14 }}>
                     {workshops[activeWs].cfp?.description}
                   </Typography>
                 )}
@@ -407,7 +407,7 @@ const Workshop = (props) => {
                 >
                   Submissions & Dates
                 </Typography>
-                <Typography sx={{ fontSize: 15 }}>
+                <Typography sx={{ fontSize: isMobile ? 30 : 14 }}>
                   If you’re interested in presenting your work at TrustAI
                   Workshop, please submit your extended abstract{" "}
                   <span
@@ -434,7 +434,7 @@ const Workshop = (props) => {
                   .
                 </Typography>
                 {activeWs === "taid2023" && (
-                  <Typography sx={{ fontSize: 15 }}>
+                  <Typography sx={{ fontSize: isMobile ? 30 : 14 }}>
                     This year we will use CMT to manage the submissions, if this
                     is your first time using the platform, you can watch a great
                     tutorial{" "}
@@ -453,7 +453,7 @@ const Workshop = (props) => {
                   <Stack direction="row" alignItems="center" spacing={1}>
                     <Typography
                       sx={{
-                        fontSize: isMobile ? 27 : 18,
+                        fontSize: isMobile ? 30 : 14,
                         fontWeight: 700,
                         color: "black",
                       }}
@@ -462,7 +462,7 @@ const Workshop = (props) => {
                     </Typography>
                     <Typography
                       sx={{
-                        fontSize: isMobile ? 27 : 18,
+                        fontSize: isMobile ? 30 : 14,
                         color: "red",
                       }}
                     >
@@ -472,7 +472,7 @@ const Workshop = (props) => {
                   <Stack direction="row" alignItems="center" spacing={1}>
                     <Typography
                       sx={{
-                        fontSize: isMobile ? 27 : 18,
+                        fontSize: isMobile ? 30 : 14,
                         fontWeight: 700,
                         color: "black",
                       }}
@@ -487,7 +487,7 @@ const Workshop = (props) => {
                       }
                       sx={{
                         ...customStyles.externalLinks,
-                        fontSize: isMobile ? 27 : 18,
+                        fontSize: isMobile ? 30 : 14,
                       }}
                     >
                       {workshops[activeWs].cfp?.submitname}
@@ -497,7 +497,7 @@ const Workshop = (props) => {
                     <Stack direction="row" alignItems="center" spacing={1}>
                       <Typography
                         sx={{
-                          fontSize: isMobile ? 27 : 18,
+                          fontSize: isMobile ? 30 : 14,
                           fontWeight: 700,
                           color: "black",
                         }}
@@ -512,7 +512,7 @@ const Workshop = (props) => {
                         }
                         sx={{
                           ...customStyles.externalLinks,
-                          fontSize: isMobile ? 27 : 18,
+                          fontSize: isMobile ? 30 : 14,
                         }}
                       >
                         here
