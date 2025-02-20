@@ -74,7 +74,7 @@ const Layout = (props) => {
                     <Typography
                       component="h6"
                       sx={{
-                        fontSize: isMobile ? 35 : 20,
+                        fontSize: isMobile ? 35 : 15,
                         fontWeight: 700,
                       }}
                     >
