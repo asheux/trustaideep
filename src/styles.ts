@@ -36,7 +36,7 @@ export const customStyles = {
     position: "relative",
   },
   wsProfileName: {
-    fontSize: isMobile ? 30 : 15,
+    fontSize: isMobile ? 35 : 15,
     fontWeight: 700,
     lineHeight: 1.2,
   },
