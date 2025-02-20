@@ -67,7 +67,7 @@ const Schedule = () => {
               variant={isMobile ? "h4" : "h5"}
               sx={{ textAlign: "center" }}
             >
-              @ DeepIndaba
+              @ {workshops[`taid${active}`].location}
             </Typography>
           </Stack>
         </Box>
