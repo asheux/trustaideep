@@ -37,7 +37,7 @@ export const workshops = {
     title: "TrustAI Workshop: Building Public Awareness and Engagement",
     year: 2025,
     datetime: "August 21, 9 am to 4pm",
-    location: "DeepIndaba 2025, Kigali Rwanda",
+    location: "Deep Learning Indaba 2025, Kigali Rwanda",
     locationimage: "/images/2022/indaba.jpg",
     about:
       "Trustworthy AI seeks to ensure that AI systems are aligned with ethical principles, particularly in their societal impact. Given the unique historical and structural challenges of the African continent, it is vital that AI systems are developed to be culturally and ethically relevant, reflecting the continent’s diverse values, and effectively addressing its specific challenges in sectors like healthcare, agriculture, and finance. This full-day workshop offers a platform for researchers to learn, discuss, and engage with the challenges of developing and deploying trustworthy AI systems—especially for and within Africa. This year, the focus is on “Building Public Awareness and Engagement”. By bringing together researchers, ML practitioners, and stakeholders, we aim to strengthen the ecosystem for African centered trustworthy AI. Through this platform, we hope to inspire initiatives that ensure AI development in Africa is trustworthy, inclusive, and impactful, benefiting marginalized communities and fostering a more diverse, culturally relevant global AI landscape.",
@@ -85,7 +85,7 @@ export const workshops = {
       {
         name: "Dr. John Wamburu",
         affiliate: "Research Engineer at Google, Nairobi, Kenya",
-        image: "/images/2025/johnwamburu.jpeg",
+        image: "/images/2025/1663068153827.jpeg",
         bio: "Dr. John Wamburu is a Research Engineer at Google. His current work focuses on building and applying ML models to forecast global food insecurity. Previously, he was a Research Scientist at IBM where he focused on trustworthy AI and anomalous pattern discovery. He was a co-organizer of the Practical ML for Low Resource Settings Workshop at ICLR and the Trustworthy AI Workshop at IJCAI, both in 2024. He received his Ph.D. in 2023 from the University of Massachusetts Amherst.",
         link: null,
         expanded: false,
@@ -136,7 +136,7 @@ export const workshops = {
     title: null,
     year: 2023,
     datetime: null,
-    location: "DeepIndaba 2023",
+    location: "Deep Learning Indaba 2023",
     locationimage: "/images/2022/indaba.jpg",
     about:
       "Recent years have seen an overwhelming body of work on fairness and robustness in machine learning (ML) models. This is not unexpected, as it is an increasingly important concern as ML models are used to support decision-making in high-stakes applications such as mortgage lending, hiring, and diagnosis in healthcare. Trustworthy AI aims to provide an explainable, robust, and fair decision-making process. In addition, transparency and security also play a significant role in improving the adoption and impact of ML solutions. Currently, most ML models assume ideal conditions and rely on the assumption that test/clinical data comes from the same distribution of the training samples. However, this assumption is not satisfied in most real-world applications; in a clinical setting, we can find different hardware devices, diverse patient populations, or samples from unknown medical conditions. On the other hand, we need to assess potential disparities in outcomes that can be translated and deepened in our ML solutions. Particularly, data and models are often imported from external sources in addressing solutions in developing countries, thereby risking potential security issues. The divergence of data and model from a population at hand also poses a lack of transparency and explainability in the decision-making process. In this second edition of the workshop, we aim to bring researchers, policymakers, and regulators to discuss ways to ensure security and transparency while addressing fundamental problems in developing countries, particularly, when data and models are imported and/or collected locally with less focus on ethical considerations and governance guidelines.",
@@ -440,7 +440,7 @@ export const workshops = {
     title: null,
     year: 2022,
     datetime: null,
-    location: "DeepIndaba 2022",
+    location: "Deep Learning Indaba 2022",
     locationimage: "/images/2022/indaba.jpg",
     about:
       "Trustworthy AI aims to provide explainable, robust and fair decision making process. In addition, transparency and security also plays a significant role to improve the adoptability and impact of ML solutions. Particularly, data and models often imported from external sources in addressing solutions in developing countries, thereby  risking potential security issues.   The  divergence of data and model from population at hand also poses a lack of transparency and explainabilty of the decision making process. Thus,  a  workshop at Deep Indaba 2022 on this specific theme aims to bring researchers, policy makers and regulators to discuss on ways to ensure security and transparency while addressing fundamental problems in developing countries, particularly, when data and models are imported and/or collected locally with less focus on ethical consideraions and governance guidelines.",
