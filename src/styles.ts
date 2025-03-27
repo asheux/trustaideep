@@ -87,7 +87,7 @@ export const customStyles = {
     cursor: "pointer",
   },
   mediaStyles: {
-    height: 300,
+    height: 280,
     width: "100%",
     objectFit: "cover",
     objectPosition: "center",

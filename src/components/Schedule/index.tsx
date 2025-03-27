@@ -9,11 +9,11 @@ import {
   Divider,
 } from "@mui/material";
 
-import { workshops, isMobile } from "src/helpers";
+import { workshops, isMobile, activeSchedule } from "src/helpers";
 
 const Schedule = () => {
   const mainContentRef = useRef<HTMLDivElement>(null);
-  const [active, setActive] = useState("2023");
+  const [active, setActive] = useState(activeSchedule);
 
   const wsyears = Object.keys(workshops).map((item) => item.slice(-4));
 
@@ -69,6 +69,17 @@ const Schedule = () => {
             >
               @ {workshops[`taid${active}`].location}
             </Typography>
+            {workshops[`taid${active}`].datetime && (
+              <Typography
+                sx={{
+                  textAlign: "center",
+                  color: "#445029",
+                  fontSize: isMobile ? 20 : 18,
+                }}
+              >
+                {workshops[`taid${active}`].datetime}
+              </Typography>
+            )}
           </Stack>
         </Box>
         <Container sx={{ mt: isMobile ? 4 : 2, mb: isMobile ? 8 : 2 }}>
@@ -103,6 +114,13 @@ const Schedule = () => {
               </Box>
             ))}
           </Stack>
+          {!workshops[`taid${active}`]?.schedule?.length && (
+            <Box mt={2}>
+              <Typography>
+                The final schedule will be published closer to the date
+              </Typography>
+            </Box>
+          )}
           {workshops[`taid${active}`]?.schedule?.map((sch, index) => (
             <Box key={index} sx={{ mt: 2 }}>
               <Box sx={{ mb: 1 }}>

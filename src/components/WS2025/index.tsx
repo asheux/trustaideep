@@ -3,14 +3,12 @@ import React from "react";
 
 import Workshop from "src/components/Workshop";
 
-import { activePage } from "src/helpers";
-
-const PublicPage = (props) => {
+const WS2025 = (props) => {
   return (
     <React.Fragment>
-      <Workshop {...props} activeWs={activePage} />
+      <Workshop {...props} activeWs="taid2025" />
     </React.Fragment>
   );
 };
 
-export default PublicPage;
+export default WS2025;

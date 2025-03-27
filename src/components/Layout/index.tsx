@@ -21,22 +21,7 @@ import { StyledToolbar, ScrollTop } from "src/commons/Toolbar";
 import { PreviousRouteProvider } from "src/routes/context";
 
 import { customStyles } from "src/styles";
-import { isMobile } from "src/helpers";
-
-const settings = [
-  {
-    name: "TrustAI @ IJCAI 2024",
-    path: "TrustAIIJCAI2024",
-  },
-  {
-    name: "TrustAI @ Indaba 2023",
-    path: "TrustAIIndaba2023",
-  },
-  {
-    name: "TrustAI @ Indaba 2022",
-    path: "TrustAIIndaba2022",
-  },
-];
+import { isMobile, settings } from "src/helpers";
 
 const Layout = (props) => {
   const { children } = props;

@@ -9,10 +9,139 @@ export const dateFormatterNoTime = (date) => moment(date).format("MMM Do YYYY");
 
 export const projects = [{ label: "Trust AI Deep", value: "taid" }];
 
+export const settings = [
+  {
+    name: "TrustAI @ Indaba 2025",
+    path: "TrustAIIndaba2025",
+  },
+  {
+    name: "TrustAI @ IJCAI 2024",
+    path: "TrustAIIJCAI2024",
+  },
+  {
+    name: "TrustAI @ Indaba 2023",
+    path: "TrustAIIndaba2023",
+  },
+  {
+    name: "TrustAI @ Indaba 2022",
+    path: "TrustAIIndaba2022",
+  },
+];
+
+export const activeSchedule = "2025";
+export const activePage = "taid2025";
+
 export const workshops = {
+  taid2025: {
+    name: "TrustAIDeepLIndaba2025",
+    title: "TrustAI Workshop: Building Public Awareness and Engagement",
+    year: 2025,
+    datetime: "August 21, 9 am to 4pm",
+    location: "DeepIndaba 2025, Kigali Rwanda",
+    locationimage: "/images/2022/indaba.jpg",
+    about:
+      "Trustworthy AI seeks to ensure that AI systems are aligned with ethical principles, particularly in their societal impact. Given the unique historical and structural challenges of the African continent, it is vital that AI systems are developed to be culturally and ethically relevant, reflecting the continent’s diverse values, and effectively addressing its specific challenges in sectors like healthcare, agriculture, and finance. This full-day workshop offers a platform for researchers to learn, discuss, and engage with the challenges of developing and deploying trustworthy AI systems—especially for and within Africa. This year, the focus is on “Building Public Awareness and Engagement”. By bringing together researchers, ML practitioners, and stakeholders, we aim to strengthen the ecosystem for African centered trustworthy AI. Through this platform, we hope to inspire initiatives that ensure AI development in Africa is trustworthy, inclusive, and impactful, benefiting marginalized communities and fostering a more diverse, culturally relevant global AI landscape.",
+    speakers: [
+      {
+        name: "Sanmi Koyejo",
+        image: "/images/2025/Koyejo-Profile-scaled.jpg",
+        bio: "Sanmi (Oluwasanmi) Koyejo is an Assistant Professor in the Department of Computer Science at Stanford University and an adjunct Associate Professor in the Department of Computer Science at the University of Illinois at Urbana-Champaign. Koyejo leads Stanford Trustworthy AI Research (STAIR), working to develop the principles and practice of trustworthy machine learning, focusing on applications to neuroscience and healthcare. Koyejo completed a Ph.D. at the University of Texas at Austin, and postdoctoral research at Stanford University. Koyejo has been the recipient of several awards, including a best paper award from the conference on uncertainty in artificial intelligence, a Skip Ellis Early Career Award, a Sloan Fellowship, a Terman faculty fellowship, an NSF CAREER award, a Kavli Fellowship, an IJCAI early career spotlight, and a trainee award from the Organization for Human Brain Mapping. Koyejo spends time at Google as a part of the Brain team, serves on the Neural Information Processing Systems Foundation Board, the Association for Health Learning and Inference Board, and as president of the Black in AI organization.",
+        topic: "",
+        expanded: false,
+        link: "https://cs.stanford.edu/~sanmi/index.html",
+        affiliate:
+          "Assistant Professor in the Department of Computer Science at Stanford University",
+      },
+      {
+        name: "Kush R. Varshney",
+        image: "/images/2025/kushvarshney.webp",
+        bio: "Dr. Varshney is an IBM Fellow based at the Thomas J. Watson Research Center, Yorktown Heights, NY, where he directs Human-Centered Trustworthy AI research. He was a visiting scientist at IBM Research - Africa, Nairobi, Kenya in 2019. He was the founding co-director of the IBM Science for Social Good initiative from 2015-2023. He applies data science and predictive analytics to human capital management, healthcare, olfaction, computational creativity, public affairs, international development, and algorithmic fairness, which has led to the Extraordinary IBM Research Technical Accomplishment for contributions to workforce innovation and enterprise transformation, and IBM Corporate Technical Awards for Trustworthy AI and for AI-Powered Employee Journey.",
+        topic: "",
+        expanded: false,
+        link: "https://research.ibm.com/people/kush-varshney",
+        affiliate: "Fellow at IBM Research",
+      },
+    ],
+    cfp: null,
+    organizers: [
+      {
+        name: "Dr. Celia Cintas",
+        affiliate:
+          "Staff Research Scientist at IBM Research Africa, Nairobi, Kenya",
+        image: "/images/2025/celiacintas.jpg",
+        bio: "Dr. Celia Cintas is a Staff Research Scientist at IBM Research Africa, based in Nairobi. She is a member of the AI Science team at the Kenya Lab. Her current research focuses on the improvement of ML techniques to address challenges in global health and exploring subset scanning for anomaly detection under generative models. Previously, she was a grantee from the National Scientific and Technical Research Council (CONICET), working on Deep Learning for populations studies at LCI-UNS and IPCSH-CONICET (Argentina) as part of the Consortium for Analysis of the Diversity and Evolution of Latin America (CANDELA). During her PhD, she was a visitor student at the University College of London (UK). She was also a Postdoc researcher visitor at Jaén University (Spain). She holds a Ph.D. in Computer Science from the Universidad del Sur (Argentina). Co-chair of several Scipy Latinamerica conferences, Financial Aid Co-Chair for the SciPy (USA) Committee (2016-2019), and Diversity Co-Chair for SciPy (2020-2022). Workshop Co-Chair at ICLR 2023, Diversity Co-chair for ISBI-IEEE 2023 and 2024, MICCAI 2026. Co-Organizer of multiple workshops at Deep Learning Indaba, ICLR, IJCAI, and MICCAI, among others. A detailed list of talks, publications, and events is available at Personal Website.",
+        link: "https://celiacintas.io",
+        expanded: false,
+      },
+      {
+        name: "Siobhan Mackenzie Hall",
+        affiliate:
+          "Ph.D. student at the University of Oxford, Oxford, UnitedKingdom",
+        image: "/images/2025/siobhan.jpeg",
+        bio: "Siobhan Mackenzie Hall is a Ph.D. student at the University of Oxford as part of the Oxford Neural Interfacing Group, where she investigates the stimulation of the somatosensory cortex in brain-computer interfaces. In addition to her Ph.D., Siobhan is a part of the Oxford Artificial Intelligence Student Labs, where students collaborate in the field of fairness for vision-language models. She completed her undergraduate and master’s degrees in South Africa. Siobhan has previously been a co-organiser for two editions of the Trustworthy AI workshop, at the Deep Learning Indaba 2023, and IJCAI 2024.",
+        link: null,
+        expanded: false,
+      },
+      {
+        name: "Dr. Skyler Speakman",
+        affiliate:
+          "Senior Research Scientist, Manager at IBM Research Africa in Nairobi, Kenya",
+        image: "/images/2025/speakman_small.jpg",
+        bio: "Dr. Speakman manages the AI Sciences team at the Kenya lab of IBM Research Africa. He has worked on a wide range of topics spanning financial inclusion, maternal newborn child health, representation engineering, and anomalous pattern detection. He received his PhD from Carnegie Mellon University in 2014. He also holds masters degrees in Public Policy (2014), Machine Learning (2012), and Statistics (2008).",
+        link: null,
+        expanded: false,
+      },
+      {
+        name: "Miriam Rateike",
+        affiliate:
+          "IBM Research Africa, Nairobi, Kenya and PhD Student at Saarland University, Germany",
+        image: "/images/2025/miriamrateike.jpg",
+        bio: "Research Scientist at IBM Research Africa, Nairobi, Kenya; PhD Student at Saarland University, Germany, miriam.rateike@ibm.com: Miriam is a research scientist at IBM Research Africa, and an ELLIS PhD student at Saarland University. In her PhD, her research focuses on creating algorithms for fair decision making under feedback loops. She is also enrolled in legal studies and thus particularly interested in the intersection of fairness and law. Miriam received the Google AI Fellowship 2023 in Machine Learning. She was an organizer of four NeurIPS Algorithmic Fairness workshops 2021 - 2024, the ELLIS workshop on Causethial Machine Learning 2021, the Causethical Machine Learning Seminar 2021/22, and the TReND Python Course 2021-2022. More here: https://research.ibm.com/people/miriam-rateike",
+        link: "https://sites.google.com/view/miriam-rateike/about",
+        expanded: false,
+      },
+      {
+        name: "Aisha Alryeh Mkean Alaagib",
+        affiliate: "Applied researcher at a private ARD in Saudi Arabia",
+        image: "/images/2025/aisha.jpeg",
+        bio: "Aisha Alaagib is an applied researcher at a private ARD in Saudi Arabia, specializing in LLM evaluation, synthetic data generation, and video anomaly detection. In her current role, she works on advancing innovative solutions in artificial intelligence. Previously, she was a research assistant at the German Research Center for Artificial Intelligence (DFKI), where she contributed to studies on representation learning for remote sensing data under the guidance of Prof. Sebastian Vollmer and Prof. Seth Flaxman. Aisha has also completed research internships at Mila Quebec AI Institute and Vector Institute, where she honed her skills in AI development and data science. She holds two M.Sc. degrees in Mathematical Sciences and Machine Intelligence from AIMS Cameroon and AIMS Rwanda, respectively, and a bachelor’s degree in Mathematics and Computer Science from the University of Khartoum, Sudan.",
+        link: "https://aishaalaagib.netlify.app/",
+        expanded: false,
+      },
+      {
+        name: "Deborah D. Kanubala",
+        affiliate: "PhD student at Saarland University, Germany",
+        image: null,
+        bio: "Deborah D. Kanubala is a PhD student at Saarland University, focusing on the development of fair machine learning algorithms. Previously, she worked as an NLP Engineer at Proto and lectured at Academic City University. She is a co-organizer of Women in Machine Learning and Data Science Accra and currently leads the Programs Committee of IndabaX Ghana. She was also an organizer of the Black in AI Workshop 2022 and a co-organizer of the Trend in African Python workshop 2021-2022. She is a recipient of several scholarships and grants, including the Mastercard Foundation Scholar Grant and the Alumnode Project Grant, among others. She has been recognized in prominent lists such as 120+ Women Spearheading Advances in AI and the 100 Brilliant Women in AI Ethics list for 2024.",
+        link: "https://www.linkedin.com/in/kanubalad/",
+        expanded: false,
+      },
+      {
+        name: "Dr. John Wamburu",
+        affiliate: "Research Engineer at Google, Nairobi, Kenya",
+        image: "/images/2025/johnwamburu.jpeg",
+        bio: "Dr. John Wamburu is a Research Engineer at Google. His current work focuses on building and applying ML models to forecast global food insecurity. Previously, he was a Research Scientist at IBM where he focused on trustworthy AI and anomalous pattern discovery. He was a co-organizer of the Practical ML for Low Resource Settings Workshop at ICLR and the Trustworthy AI Workshop at IJCAI, both in 2024. He received his Ph.D. in 2023 from the University of Massachusetts Amherst.",
+        link: null,
+        expanded: false,
+      },
+      {
+        name: "Brian A. Mboya",
+        affiliate:
+          "Affiliate Researcher at Wolfram Institute and Senior Software Engineer at Soapbox Inc",
+        image: "/images/2025/brianmboya.jpg",
+        bio: "Affiliate Researcher at Wolfram Institute and Senior Software Engineer at Soapbox Inc, Nairobi, Kenya, brian.mboya@protonmail.com: Brian Mboya is an Affiliate Researcher at Wolfram Institute and a senior software engineer at Soapbox Inc.; and student of computer science in Dedan Kimathi University of Technology in Kenya. He is a programmer with 6+ years of industry experience and academic experience in data annotation and analysis used to understand the social perceptions of facial AI systems. His current work explores the behavior of Cellular Automata and Turing machines to identify rules that produce complex behaviours in simple programs and reveal insights into intelligent attributes. He received several scholarships for attending different summer schools, including TReND Computational Neuroscience and Machine Learning in Africa 2023, Simons Computational Neuroscience Imbizo 2024 and Explore and create projects at the frontiers of science, technology and innovation, Wolfram Research 2024.",
+        link: "https://asheux.com/",
+        expanded: false,
+      },
+    ],
+    coc: {},
+    schedule: [],
+  },
   taid2023: {
     name: "TrustAIDeepLIndaba2023",
+    title: null,
     year: 2023,
+    datetime: null,
     location: "DeepIndaba 2023",
     locationimage: "/images/2022/indaba.jpg",
     about:
@@ -313,7 +442,9 @@ export const workshops = {
   },
   taid2022: {
     name: "TrustAIDeepLIndaba2022",
+    title: null,
     year: 2022,
+    datetime: null,
     location: "DeepIndaba 2022",
     locationimage: "/images/2022/indaba.jpg",
     about:
