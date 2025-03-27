@@ -65,6 +65,44 @@ export const workshops = {
     cfp: null,
     organizers: [
       {
+        name: "Miriam Rateike",
+        affiliate:
+          "IBM Research Africa, Nairobi, Kenya and PhD Student at Saarland University, Germany",
+        image: "/images/2025/miriamrateike.jpg",
+        bio: "Research Scientist at IBM Research Africa, Nairobi, Kenya; PhD Student at Saarland University, Germany, miriam.rateike@ibm.com: Miriam is a research scientist at IBM Research Africa, and an ELLIS PhD student at Saarland University. In her PhD, her research focuses on creating algorithms for fair decision making under feedback loops. She is also enrolled in legal studies and thus particularly interested in the intersection of fairness and law. Miriam received the Google AI Fellowship 2023 in Machine Learning. She was an organizer of four NeurIPS Algorithmic Fairness workshops 2021 - 2024, the ELLIS workshop on Causethial Machine Learning 2021, the Causethical Machine Learning Seminar 2021/22, and the TReND Python Course 2021-2022. More here: https://research.ibm.com/people/miriam-rateike",
+        link: "https://sites.google.com/view/miriam-rateike/about",
+        expanded: false,
+      },
+      {
+        name: "Brian A. Mboya",
+        affiliate:
+          "Affiliate Researcher at Wolfram Institute and Senior Software Engineer at Soapbox Inc",
+        image: "/images/2025/brianmboya.jpg",
+        bio: "Affiliate Researcher at Wolfram Institute and Senior Software Engineer at Soapbox Inc, Nairobi, Kenya, brian.mboya@protonmail.com: Brian Mboya is an Affiliate Researcher at Wolfram Institute and a senior software engineer at Soapbox Inc.; and student of computer science in Dedan Kimathi University of Technology in Kenya. He is a programmer with 6+ years of industry experience and academic experience in data annotation and analysis used to understand the social perceptions of facial AI systems. His current work explores the behavior of Cellular Automata and Turing machines to identify rules that produce complex behaviours in simple programs and reveal insights into intelligent attributes. He received several scholarships for attending different summer schools, including TReND Computational Neuroscience and Machine Learning in Africa 2023, Simons Computational Neuroscience Imbizo 2024 and Explore and create projects at the frontiers of science, technology and innovation, Wolfram Research 2024.",
+        link: "https://asheux.com/",
+        expanded: false,
+      },
+      {
+        name: "Dr. John Wamburu",
+        affiliate: "Research Engineer at Google, Nairobi, Kenya",
+        image: "/images/2025/johnwamburu.jpeg",
+        bio: "Dr. John Wamburu is a Research Engineer at Google. His current work focuses on building and applying ML models to forecast global food insecurity. Previously, he was a Research Scientist at IBM where he focused on trustworthy AI and anomalous pattern discovery. He was a co-organizer of the Practical ML for Low Resource Settings Workshop at ICLR and the Trustworthy AI Workshop at IJCAI, both in 2024. He received his Ph.D. in 2023 from the University of Massachusetts Amherst.",
+        link: null,
+        expanded: false,
+      },
+      {
+        name: "Aisha Alryeh Mkean Alaagib",
+        affiliate: "Applied researcher at a private ARD in Saudi Arabia",
+        image: "/images/2025/aisha.jpeg",
+        bio: "Aisha Alaagib is an applied researcher at a private ARD in Saudi Arabia, specializing in LLM evaluation, synthetic data generation, and video anomaly detection. In her current role, she works on advancing innovative solutions in artificial intelligence. Previously, she was a research assistant at the German Research Center for Artificial Intelligence (DFKI), where she contributed to studies on representation learning for remote sensing data under the guidance of Prof. Sebastian Vollmer and Prof. Seth Flaxman. Aisha has also completed research internships at Mila Quebec AI Institute and Vector Institute, where she honed her skills in AI development and data science. She holds two M.Sc. degrees in Mathematical Sciences and Machine Intelligence from AIMS Cameroon and AIMS Rwanda, respectively, and a bachelor’s degree in Mathematics and Computer Science from the University of Khartoum, Sudan.",
+        link: "https://aishaalaagib.netlify.app/",
+        expanded: false,
+      },
+    ],
+    coc: {},
+    schedule: [],
+    advisors: [
+      {
         name: "Dr. Celia Cintas",
         affiliate:
           "Staff Research Scientist at IBM Research Africa, Nairobi, Kenya",
@@ -91,51 +129,7 @@ export const workshops = {
         link: null,
         expanded: false,
       },
-      {
-        name: "Miriam Rateike",
-        affiliate:
-          "IBM Research Africa, Nairobi, Kenya and PhD Student at Saarland University, Germany",
-        image: "/images/2025/miriamrateike.jpg",
-        bio: "Research Scientist at IBM Research Africa, Nairobi, Kenya; PhD Student at Saarland University, Germany, miriam.rateike@ibm.com: Miriam is a research scientist at IBM Research Africa, and an ELLIS PhD student at Saarland University. In her PhD, her research focuses on creating algorithms for fair decision making under feedback loops. She is also enrolled in legal studies and thus particularly interested in the intersection of fairness and law. Miriam received the Google AI Fellowship 2023 in Machine Learning. She was an organizer of four NeurIPS Algorithmic Fairness workshops 2021 - 2024, the ELLIS workshop on Causethial Machine Learning 2021, the Causethical Machine Learning Seminar 2021/22, and the TReND Python Course 2021-2022. More here: https://research.ibm.com/people/miriam-rateike",
-        link: "https://sites.google.com/view/miriam-rateike/about",
-        expanded: false,
-      },
-      {
-        name: "Aisha Alryeh Mkean Alaagib",
-        affiliate: "Applied researcher at a private ARD in Saudi Arabia",
-        image: "/images/2025/aisha.jpeg",
-        bio: "Aisha Alaagib is an applied researcher at a private ARD in Saudi Arabia, specializing in LLM evaluation, synthetic data generation, and video anomaly detection. In her current role, she works on advancing innovative solutions in artificial intelligence. Previously, she was a research assistant at the German Research Center for Artificial Intelligence (DFKI), where she contributed to studies on representation learning for remote sensing data under the guidance of Prof. Sebastian Vollmer and Prof. Seth Flaxman. Aisha has also completed research internships at Mila Quebec AI Institute and Vector Institute, where she honed her skills in AI development and data science. She holds two M.Sc. degrees in Mathematical Sciences and Machine Intelligence from AIMS Cameroon and AIMS Rwanda, respectively, and a bachelor’s degree in Mathematics and Computer Science from the University of Khartoum, Sudan.",
-        link: "https://aishaalaagib.netlify.app/",
-        expanded: false,
-      },
-      {
-        name: "Deborah D. Kanubala",
-        affiliate: "PhD student at Saarland University, Germany",
-        image: null,
-        bio: "Deborah D. Kanubala is a PhD student at Saarland University, focusing on the development of fair machine learning algorithms. Previously, she worked as an NLP Engineer at Proto and lectured at Academic City University. She is a co-organizer of Women in Machine Learning and Data Science Accra and currently leads the Programs Committee of IndabaX Ghana. She was also an organizer of the Black in AI Workshop 2022 and a co-organizer of the Trend in African Python workshop 2021-2022. She is a recipient of several scholarships and grants, including the Mastercard Foundation Scholar Grant and the Alumnode Project Grant, among others. She has been recognized in prominent lists such as 120+ Women Spearheading Advances in AI and the 100 Brilliant Women in AI Ethics list for 2024.",
-        link: "https://www.linkedin.com/in/kanubalad/",
-        expanded: false,
-      },
-      {
-        name: "Dr. John Wamburu",
-        affiliate: "Research Engineer at Google, Nairobi, Kenya",
-        image: "/images/2025/johnwamburu.jpeg",
-        bio: "Dr. John Wamburu is a Research Engineer at Google. His current work focuses on building and applying ML models to forecast global food insecurity. Previously, he was a Research Scientist at IBM where he focused on trustworthy AI and anomalous pattern discovery. He was a co-organizer of the Practical ML for Low Resource Settings Workshop at ICLR and the Trustworthy AI Workshop at IJCAI, both in 2024. He received his Ph.D. in 2023 from the University of Massachusetts Amherst.",
-        link: null,
-        expanded: false,
-      },
-      {
-        name: "Brian A. Mboya",
-        affiliate:
-          "Affiliate Researcher at Wolfram Institute and Senior Software Engineer at Soapbox Inc",
-        image: "/images/2025/brianmboya.jpg",
-        bio: "Affiliate Researcher at Wolfram Institute and Senior Software Engineer at Soapbox Inc, Nairobi, Kenya, brian.mboya@protonmail.com: Brian Mboya is an Affiliate Researcher at Wolfram Institute and a senior software engineer at Soapbox Inc.; and student of computer science in Dedan Kimathi University of Technology in Kenya. He is a programmer with 6+ years of industry experience and academic experience in data annotation and analysis used to understand the social perceptions of facial AI systems. His current work explores the behavior of Cellular Automata and Turing machines to identify rules that produce complex behaviours in simple programs and reveal insights into intelligent attributes. He received several scholarships for attending different summer schools, including TReND Computational Neuroscience and Machine Learning in Africa 2023, Simons Computational Neuroscience Imbizo 2024 and Explore and create projects at the frontiers of science, technology and innovation, Wolfram Research 2024.",
-        link: "https://asheux.com/",
-        expanded: false,
-      },
     ],
-    coc: {},
-    schedule: [],
   },
   taid2023: {
     name: "TrustAIDeepLIndaba2023",
@@ -185,27 +179,6 @@ export const workshops = {
         affiliate: null,
       },
     ],
-    cfp: {
-      title: "Trustworthy AI Workshop 2023",
-      description:
-        "Recent years have seen an overwhelming body of work on fairness and robustness in machine learning (ML) models. This is not unexpected, as it is an increasingly important concern as ML models are used to support decision-making in high-stakes applications such as mortgage lending, hiring, and diagnosis in healthcare. Trustworthy AI aims to provide an explainable, robust, and fair decision-making process. In addition, transparency and security also play a significant role in improving the adoption and impact of ML solutions. We need to assess potential disparities in outcomes that can be translated and deepened in our ML solutions. Particularly, data and models are often imported from external sources in addressing solutions in developing countries, thereby risking potential security issues. The divergence of data and model from a population at hand also poses a lack of transparency and explainability in the decision-making process. This workshop aims to bring researchers, policymakers, and regulators to discuss ways to ensure security and transparency while addressing fundamental problems in developing countries, particularly, when data and models are imported and/or collected locally with less focus on ethical considerations and governance guidelines. We’re looking for extended abstracts that will be presented as contributed talks (10 to 15 minutes) related to",
-      topics: [
-        "Audit techniques in data and ML models",
-        "Advances in algorithms and metrics for robust ML",
-        "Uncertainty quantification techniques and Fairness studies",
-        "Applications and research in data and model Privacy/Security",
-        "Methodologies or case studies for explainable and transparent AI",
-      ],
-      othertopics: [],
-      abstractsubdate: "July 28th, 2023",
-      submitname: "DLI Author Kit",
-      submissionlink:
-        "https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FTrustMLDeepIndaba2023",
-      resourcelink:
-        "https://drive.google.com/drive/folders/1K8yBWIkQMO0D5o_XfY6K63MI3RzGopAf",
-      tutoriallink:
-        "https://www.youtube.com/watch?v=2wNEfoxcRYw&ab_channel=FES-CongressonFoodandEnvironmentalSecurity",
-    },
     organizers: [
       {
         name: "Aisha Alryeh Mkean Alaagib",
@@ -257,6 +230,28 @@ export const workshops = {
         expanded: false,
       },
     ],
+    advisors: null,
+    cfp: {
+      title: "Trustworthy AI Workshop 2023",
+      description:
+        "Recent years have seen an overwhelming body of work on fairness and robustness in machine learning (ML) models. This is not unexpected, as it is an increasingly important concern as ML models are used to support decision-making in high-stakes applications such as mortgage lending, hiring, and diagnosis in healthcare. Trustworthy AI aims to provide an explainable, robust, and fair decision-making process. In addition, transparency and security also play a significant role in improving the adoption and impact of ML solutions. We need to assess potential disparities in outcomes that can be translated and deepened in our ML solutions. Particularly, data and models are often imported from external sources in addressing solutions in developing countries, thereby risking potential security issues. The divergence of data and model from a population at hand also poses a lack of transparency and explainability in the decision-making process. This workshop aims to bring researchers, policymakers, and regulators to discuss ways to ensure security and transparency while addressing fundamental problems in developing countries, particularly, when data and models are imported and/or collected locally with less focus on ethical considerations and governance guidelines. We’re looking for extended abstracts that will be presented as contributed talks (10 to 15 minutes) related to",
+      topics: [
+        "Audit techniques in data and ML models",
+        "Advances in algorithms and metrics for robust ML",
+        "Uncertainty quantification techniques and Fairness studies",
+        "Applications and research in data and model Privacy/Security",
+        "Methodologies or case studies for explainable and transparent AI",
+      ],
+      othertopics: [],
+      abstractsubdate: "July 28th, 2023",
+      submitname: "DLI Author Kit",
+      submissionlink:
+        "https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FTrustMLDeepIndaba2023",
+      resourcelink:
+        "https://drive.google.com/drive/folders/1K8yBWIkQMO0D5o_XfY6K63MI3RzGopAf",
+      tutoriallink:
+        "https://www.youtube.com/watch?v=2wNEfoxcRYw&ab_channel=FES-CongressonFoodandEnvironmentalSecurity",
+    },
     coc: {
       source:
         "https://deeplearningindaba.com/mentorship/code-of-ethics-and-conduct/#:~:text=Code%20of%20Conduct%3A%20Every%20participant,%2C%20religion%2C%20or%20socioeconomic%20status.",
@@ -477,24 +472,6 @@ export const workshops = {
         affiliate: null,
       },
     ],
-    cfp: {
-      title: "Trustworthy AI Workshop 2022",
-      description: "",
-      topics: [
-        "Audit techniques in data and ML models",
-        "Advances in algorithms and metrics for robust ML",
-        "Uncertainty quantification techniques and Fairness studies",
-        "Applications and research in data and model Privacy/Security",
-        "Methodologies or case studies for explainable and transparent AI",
-      ],
-      othertopics: [],
-      abstractsubdate: "1st of August 2022",
-      submitname: "Form",
-      submissionlink: "https://forms.gle/19aJixpRX4PpvZZt8",
-      resourcelink:
-        "https://drive.google.com/drive/folders/1K8yBWIkQMO0D5o_XfY6K63MI3RzGopAf",
-      tutoriallink: null,
-    },
     organizers: [
       {
         name: "Aisha Alryeh Mkean Alaagib",
@@ -529,6 +506,25 @@ export const workshops = {
         expanded: false,
       },
     ],
+    advisors: null,
+    cfp: {
+      title: "Trustworthy AI Workshop 2022",
+      description: "",
+      topics: [
+        "Audit techniques in data and ML models",
+        "Advances in algorithms and metrics for robust ML",
+        "Uncertainty quantification techniques and Fairness studies",
+        "Applications and research in data and model Privacy/Security",
+        "Methodologies or case studies for explainable and transparent AI",
+      ],
+      othertopics: [],
+      abstractsubdate: "1st of August 2022",
+      submitname: "Form",
+      submissionlink: "https://forms.gle/19aJixpRX4PpvZZt8",
+      resourcelink:
+        "https://drive.google.com/drive/folders/1K8yBWIkQMO0D5o_XfY6K63MI3RzGopAf",
+      tutoriallink: null,
+    },
     coc: {
       source:
         "https://deeplearningindaba.com/mentorship/code-of-ethics-and-conduct/#:~:text=Code%20of%20Conduct%3A%20Every%20participant,%2C%20religion%2C%20or%20socioeconomic%20status.",

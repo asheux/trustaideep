@@ -20,6 +20,7 @@ const Workshop = (props) => {
   const { activeWs } = props;
   const [espeakers, setESpeakers] = useState([]);
   const [eorganizers, setEOrganizers] = useState([]);
+  const [eadvisors, setEAdvisors] = useState([]);
   const mainContentRef = useRef<HTMLDivElement>(null);
 
   const theme = useTheme();
@@ -48,6 +49,18 @@ const Workshop = (props) => {
     }
   };
 
+  const toggleExpandA = (e) => {
+    const index = e.currentTarget.getAttribute("id");
+    if (index) {
+      const id = Number(index);
+      setEAdvisors((prev) =>
+        prev?.map((item, i) =>
+          i === id ? { ...item, expanded: !item.expanded } : item,
+        ),
+      );
+    }
+  };
+
   useEffect(() => {
     if (mainContentRef.current) {
       mainContentRef.current.scrollIntoView({
@@ -57,6 +70,7 @@ const Workshop = (props) => {
     }
     setESpeakers(workshops[activeWs].speakers);
     setEOrganizers(workshops[activeWs].organizers);
+    setEAdvisors(workshops[activeWs].advisors);
   }, [activeWs]);
 
   const handExternalLink = (link) => {
@@ -161,50 +175,52 @@ const Workshop = (props) => {
             </Box>
           </Container>
         )}
-        <Container maxWidth="xl">
-          <Grid container spacing={2} alignItems="center">
-            <Grid item xs={isMobile ? 12 : 7}>
-              <Box
-                sx={{
-                  height: 700,
-                }}
-              >
+        {activeWs !== "taid2025" && (
+          <Container maxWidth="xl">
+            <Grid container spacing={2} alignItems="center">
+              <Grid item xs={isMobile ? 12 : 7}>
                 <Box
-                  component="img"
-                  src={workshops[activeWs].locationimage}
                   sx={{
-                    width: "100%",
-                    height: "100%",
+                    height: 700,
                   }}
-                />
-              </Box>
-            </Grid>
-            {!isMobile && (
-              <Grid item xs={5}>
-                <Stack>
-                  {questions?.map((question, index) => (
-                    <Typography
-                      key={index}
-                      variant="h6"
-                      sx={{ color: "#445029" }}
-                    >
-                      {question}
-                    </Typography>
-                  ))}
-                </Stack>
-                <Box>
-                  <Typography
-                    variant="body2"
-                    color="text.secondary"
-                    sx={{ float: "middle" }}
-                  >
-                    Join us and find out
-                  </Typography>
+                >
+                  <Box
+                    component="img"
+                    src={workshops[activeWs].locationimage}
+                    sx={{
+                      width: "100%",
+                      height: "100%",
+                    }}
+                  />
                 </Box>
               </Grid>
-            )}
-          </Grid>
-        </Container>
+              {!isMobile && (
+                <Grid item xs={5}>
+                  <Stack>
+                    {questions?.map((question, index) => (
+                      <Typography
+                        key={index}
+                        variant="h6"
+                        sx={{ color: "#445029" }}
+                      >
+                        {question}
+                      </Typography>
+                    ))}
+                  </Stack>
+                  <Box>
+                    <Typography
+                      variant="body2"
+                      color="text.secondary"
+                      sx={{ float: "middle" }}
+                    >
+                      Join us and find out
+                    </Typography>
+                  </Box>
+                </Grid>
+              )}
+            </Grid>
+          </Container>
+        )}
         {isMobile && (
           <Box sx={{ p: 5 }}>
             <Typography
@@ -250,6 +266,7 @@ const Workshop = (props) => {
             alignItems: "center",
             height: isMobile ? 100 : 60,
             mb: 2,
+            mt: activeWs === "taid2025" ? 30 : 0,
           }}
         >
           <Stack>
@@ -265,7 +282,7 @@ const Workshop = (props) => {
           </Stack>
         </Box>
         <Container sx={{ mt: 4, mb: 4 }}>
-          <Grid container spacing={2}>
+          <Grid container spacing={2} justifyContent="center">
             {workshops[activeWs]?.speakers?.map((speaker, index) => (
               <Grid item xs={isMobile ? 12 : 3} key={index}>
                 <Stack spacing={2}>
@@ -574,7 +591,7 @@ const Workshop = (props) => {
           </Stack>
         </Box>
         <Container sx={{ mt: 4, mb: 4 }}>
-          <Grid container spacing={4}>
+          <Grid container spacing={4} justifyContent="center">
             {workshops[activeWs]?.organizers?.map((organizer, index) => (
               <Grid item xs={isMobile ? 6 : 3} key={index}>
                 <Stack spacing={2}>
@@ -657,6 +674,117 @@ const Workshop = (props) => {
             ))}
           </Grid>
         </Container>
+        {workshops[activeWs].advisors && (
+          <>
+            <Box
+              sx={{
+                backgroundColor: "#e6ecda",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                height: isMobile ? 100 : 60,
+                mb: 2,
+              }}
+            >
+              <Stack>
+                <Typography
+                  variant={isMobile ? "h3" : "h5"}
+                  sx={{
+                    fontWeight: 700,
+                    color: "#445029",
+                  }}
+                >
+                  Advisory Committee
+                </Typography>
+              </Stack>
+            </Box>
+            <Container sx={{ mt: 4, mb: 4 }}>
+              <Grid container spacing={4} justifyContent="center">
+                {workshops[activeWs]?.advisors?.map((advisor, index) => (
+                  <Grid item xs={isMobile ? 6 : 3} key={index}>
+                    <Stack spacing={2}>
+                      {advisor.image && (
+                        <Box sx={{ textAlign: "center" }}>
+                          <Box
+                            component="img"
+                            src={advisor.image}
+                            sx={customStyles.mediaStyles}
+                          />
+                        </Box>
+                      )}
+                      <Stack>
+                        <Typography
+                          onClick={() => handExternalLink(advisor?.link)}
+                          sx={{
+                            fontSize: isMobile ? 30 : 18,
+                            color: "#445029",
+                            cursor: "pointer",
+                          }}
+                        >
+                          {advisor.name}
+                        </Typography>
+                        {advisor.affiliate && (
+                          <Typography
+                            variant="body2"
+                            color="text.secondary"
+                            sx={{
+                              fontSize: isMobile ? 24 : 12,
+                            }}
+                          >
+                            {advisor.affiliate}
+                          </Typography>
+                        )}
+                      </Stack>
+                      {advisor.bio && (
+                        <Box>
+                          <Box
+                            sx={{
+                              height: eadvisors[index]?.expanded
+                                ? "auto"
+                                : advisor.bio?.length >= 400
+                                  ? 100
+                                  : "auto",
+                              overflow: "hidden",
+                              transition: "height 0.3s ease",
+                            }}
+                          >
+                            <Typography variant="body2" color="text.secondary">
+                              {advisor.bio}
+                            </Typography>
+                          </Box>
+                          {advisor.bio?.length >= 400 && (
+                            <Box>
+                              <Stack
+                                alignItems="center"
+                                onClick={toggleExpandA}
+                                id={`${index}`}
+                                direction="row"
+                                sx={{
+                                  float: "right",
+                                  cursor: "pointer",
+                                }}
+                              >
+                                <Typography variant="body2">
+                                  {eadvisors[index]?.expanded
+                                    ? "Read less"
+                                    : "Read more"}
+                                </Typography>
+                                <ViewAllIcon
+                                  sx={{ fontSize: isMobile ? 25 : 15 }}
+                                />
+                              </Stack>
+                            </Box>
+                          )}
+                        </Box>
+                      )}
+                    </Stack>
+                  </Grid>
+                ))}
+              </Grid>
+            </Container>
+          </>
+        )}
+
         <Box
           sx={{
             backgroundColor: "#e6ecda",
