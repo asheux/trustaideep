@@ -85,7 +85,7 @@ export const workshops = {
       {
         name: "Dr. John Wamburu",
         affiliate: "Research Engineer at Google, Nairobi, Kenya",
-        image: "/images/2025/1663068153827.jpeg",
+        image: "/images/2025/johnwamburu.jpeg",
         bio: "Dr. John Wamburu is a Research Engineer at Google. His current work focuses on building and applying ML models to forecast global food insecurity. Previously, he was a Research Scientist at IBM where he focused on trustworthy AI and anomalous pattern discovery. He was a co-organizer of the Practical ML for Low Resource Settings Workshop at ICLR and the Trustworthy AI Workshop at IJCAI, both in 2024. He received his Ph.D. in 2023 from the University of Massachusetts Amherst.",
         link: null,
         expanded: false,
