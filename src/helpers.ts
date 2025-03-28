@@ -67,9 +67,9 @@ export const workshops = {
       {
         name: "Miriam Rateike",
         affiliate:
-          "IBM Research Africa, Nairobi, Kenya and PhD Student at Saarland University, Germany",
+          "Research Scientist at IBM Research Africa, Nairobi, Kenya and PhD Student at Saarland University, Germany",
         image: "/images/2025/miriamrateike.jpg",
-        bio: "Research Scientist at IBM Research Africa, Nairobi, Kenya; PhD Student at Saarland University, Germany, miriam.rateike@ibm.com: Miriam is a research scientist at IBM Research Africa, and an ELLIS PhD student at Saarland University. In her PhD, her research focuses on creating algorithms for fair decision making under feedback loops. She is also enrolled in legal studies and thus particularly interested in the intersection of fairness and law. Miriam received the Google AI Fellowship 2023 in Machine Learning. She was an organizer of four NeurIPS Algorithmic Fairness workshops 2021 - 2024, the ELLIS workshop on Causethial Machine Learning 2021, the Causethical Machine Learning Seminar 2021/22, and the TReND Python Course 2021-2022. More here: https://research.ibm.com/people/miriam-rateike",
+        bio: "Miriam is a research scientist at IBM Research Africa, and an ELLIS PhD student at Saarland University. In her PhD, her research focuses on creating algorithms for fair decision making under feedback loops. She is also enrolled in legal studies and thus particularly interested in the intersection of fairness and law. Miriam received the Google AI Fellowship 2023 in Machine Learning. She was an organizer of four NeurIPS Algorithmic Fairness workshops 2021 - 2024, the ELLIS workshop on Causethial Machine Learning 2021, the Causethical Machine Learning Seminar 2021/22, and the TReND Python Course 2021-2022. More here: https://research.ibm.com/people/miriam-rateike",
         link: "https://sites.google.com/view/miriam-rateike/about",
         expanded: false,
       },
@@ -78,7 +78,7 @@ export const workshops = {
         affiliate:
           "Affiliate Researcher at Wolfram Institute and Senior Software Engineer at Soapbox Inc",
         image: "/images/2025/brianmboya.jpg",
-        bio: "Affiliate Researcher at Wolfram Institute and Senior Software Engineer at Soapbox Inc, Nairobi, Kenya, brian.mboya@protonmail.com: Brian Mboya is an Affiliate Researcher at Wolfram Institute and a senior software engineer at Soapbox Inc.; and student of computer science in Dedan Kimathi University of Technology in Kenya. He is a programmer with 6+ years of industry experience and academic experience in data annotation and analysis used to understand the social perceptions of facial AI systems. His current work explores the behavior of Cellular Automata and Turing machines to identify rules that produce complex behaviours in simple programs and reveal insights into intelligent attributes. He received several scholarships for attending different summer schools, including TReND Computational Neuroscience and Machine Learning in Africa 2023, Simons Computational Neuroscience Imbizo 2024 and Explore and create projects at the frontiers of science, technology and innovation, Wolfram Research 2024.",
+        bio: "Brian Mboya is an Affiliate Researcher at Wolfram Institute and a senior software engineer at Soapbox Inc.; and student of computer science in Dedan Kimathi University of Technology in Kenya. He is a programmer with 6+ years of industry experience and academic experience in data annotation and analysis used to understand the social perceptions of facial AI systems. His current work explores the behavior of Cellular Automata and Turing machines to identify rules that produce complex behaviours in simple programs and reveal insights into intelligent attributes. He received several scholarships for attending different summer schools, including TReND Computational Neuroscience and Machine Learning in Africa 2023, Simons Computational Neuroscience Imbizo 2024 and Explore and create projects at the frontiers of science, technology and innovation, Wolfram Research 2024.",
         link: "https://asheux.com/",
         expanded: false,
       },
@@ -114,7 +114,7 @@ export const workshops = {
       {
         name: "Siobhan Mackenzie Hall",
         affiliate:
-          "Ph.D. student at the University of Oxford, Oxford, UnitedKingdom",
+          "Ph.D. student at the University of Oxford, Oxford, United Kingdom",
         image: "/images/2025/siobhan.jpeg",
         bio: "Siobhan Mackenzie Hall is a Ph.D. student at the University of Oxford as part of the Oxford Neural Interfacing Group, where she investigates the stimulation of the somatosensory cortex in brain-computer interfaces. In addition to her Ph.D., Siobhan is a part of the Oxford Artificial Intelligence Student Labs, where students collaborate in the field of fairness for vision-language models. She completed her undergraduate and master’s degrees in South Africa. Siobhan has previously been a co-organiser for two editions of the Trustworthy AI workshop, at the Deep Learning Indaba 2023, and IJCAI 2024.",
         link: null,
