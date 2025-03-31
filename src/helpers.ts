@@ -62,7 +62,63 @@ export const workshops = {
         affiliate: "Fellow at IBM Research",
       },
     ],
-    cfp: null,
+    cfp: {
+      title: "Trustworthy AI Workshop @ Deep Learning Indaba 2025",
+      description:
+        "The Trustworthy AI Workshop at Deep Learning Indaba 2025 aims to foster meaningful discussions on trustworthy AI, covering topics such as fairness, interpretability, robustness, privacy, and accountability, with a particular emphasis on African perspectives and context. As machine learning (ML) models play an increasingly central role in high-stakes decision-making across sectors like healthcare, education, and finance, ensuring that these technologies align with ethical principles to build trust is essential for their responsible deployment. This workshop seeks to provide a platform for researchers to engage with the challenges of developing and deploying AI systems, with a focus on addressing systemic inequalities and building trust in these technologies, particularly from an African perspective or within the African context.",
+      topics: [
+        {
+          title: "System Development:",
+          description:
+            "Advances in algorithms and metrics for ensuring fairness, robustness, interpretability, or privacy in ML systems",
+        },
+        {
+          title: "Auditing:",
+          description:
+            "Audit techniques for assessing fairness, robustness, interpretability, or privacy in data and ML models",
+        },
+        {
+          title: "Legal Frameworks:",
+          description:
+            "Analysis of data protection and privacy and  non-discrimination laws in Africa, AI governance and regulatory frameworks",
+        },
+        {
+          title: "Social Science Perspectives:",
+          description:
+            "Case studies on the impact of AI on marginalized communities, historical perspectives on discrimination, perceptions of fairness and AI",
+        },
+        {
+          title: "Philosophical Perspectives:",
+          description:
+            "Identification and reflections on values embedded in AI systems, ethical frameworks for AI deployment",
+        },
+      ],
+      othertopics: [],
+      topicofsub:
+        "We invite submissions that explore the themes enlisted on the left side of this section, focusing on the unique challenges and opportunities for building trust in AI. Submissions outside of these themes but still related to trust in AI will also be considered. However, submissions unrelated to trust in AI will not be considered.",
+      additionalinfo:
+        "All accepted submissions will have the opportunity to present their work as a poster. Additionally, selected submissions will be invited to present their work through a short contributed talk during the workshop.",
+      formatting:
+        "The abstract must follow the XX formatting guidelines. We accept extended abstracts of up to 4 pages, plus unlimited pages for references",
+      formatname: "XXXX",
+      abstractsubdate: "June 25th, 2025",
+      notificationdate: "July 28th, 2025",
+      submitname: "Microsoft CMT",
+      submitinstruction:
+        "Authors are required to register an account on the CMT (Conference Management Toolkit) system in order to submit their extended abstracts. If you do not have a CMT account, please create one by following the instructions provided",
+      submittype: "cmt",
+      dualsubpolicy:
+        "It is permitted to submit work that is under review or has been accepted for publication elsewhere. If your work has already been accepted at another venue, please submit a de-anonymized version and indicate this in the CMT submission form.",
+      anonymization:
+        "Our peer review process is fully anonymous, meaning reviewers will not know the authors’ identities, and authors will not know the reviewers' identities. Please ensure that you anonymize your submission.  This means that the submitted PDF should not include the authors' names, and any references to your own work should be cited in a way that does not reveal that it was authored by you. Submissions that are not properly anonymized may be rejected without review.",
+      submitinstructionlink:
+        "https://cmt3.research.microsoft.com/docs/help/general/account-creation.html",
+      submissionlink:
+        "https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F",
+      formatlink: "",
+      tutoriallink:
+        "https://www.youtube.com/watch?v=2wNEfoxcRYw&ab_channel=FES-CongressonFoodandEnvironmentalSecurity",
+    },
     organizers: [
       {
         name: "Miriam Rateike",
@@ -236,18 +292,49 @@ export const workshops = {
       description:
         "Recent years have seen an overwhelming body of work on fairness and robustness in machine learning (ML) models. This is not unexpected, as it is an increasingly important concern as ML models are used to support decision-making in high-stakes applications such as mortgage lending, hiring, and diagnosis in healthcare. Trustworthy AI aims to provide an explainable, robust, and fair decision-making process. In addition, transparency and security also play a significant role in improving the adoption and impact of ML solutions. We need to assess potential disparities in outcomes that can be translated and deepened in our ML solutions. Particularly, data and models are often imported from external sources in addressing solutions in developing countries, thereby risking potential security issues. The divergence of data and model from a population at hand also poses a lack of transparency and explainability in the decision-making process. This workshop aims to bring researchers, policymakers, and regulators to discuss ways to ensure security and transparency while addressing fundamental problems in developing countries, particularly, when data and models are imported and/or collected locally with less focus on ethical considerations and governance guidelines. We’re looking for extended abstracts that will be presented as contributed talks (10 to 15 minutes) related to",
       topics: [
-        "Audit techniques in data and ML models",
-        "Advances in algorithms and metrics for robust ML",
-        "Uncertainty quantification techniques and Fairness studies",
-        "Applications and research in data and model Privacy/Security",
-        "Methodologies or case studies for explainable and transparent AI",
+        {
+          title: "",
+          description: "Audit techniques in data and ML models",
+        },
+        {
+          title: "",
+          description: "Advances in algorithms and metrics for robust ML",
+        },
+        {
+          title: "",
+          description:
+            "Uncertainty quantification techniques and Fairness studies",
+        },
+        {
+          title: "",
+          description:
+            "Applications and research in data and model Privacy/Security",
+        },
+        {
+          title: "",
+          description:
+            "Methodologies or case studies for explainable and transparent AI",
+        },
       ],
       othertopics: [],
+      topicofsub: "",
+      additionalinfo: "",
+      formatting: "The short paper must be formatted using the",
+      formatname: "DLI Author Kit",
       abstractsubdate: "July 28th, 2023",
-      submitname: "DLI Author Kit",
+      notificationdate: "",
+      submitname: "Microsoft CMT",
+      submitinstruction:
+        "Authors are required to register an account on the CMT (Conference Management Toolkit) system in order to submit their extended abstracts. If you do not have a CMT account, please create one by following the instructions provided",
+      submittype: "cmt",
+      dualsubpolicy: "",
+      anonymization:
+        "Our peer review process is fully anonymous, meaning reviewers will not know the authors’ identities, and authors will not know the reviewers' identities. Please ensure that you anonymize your submission.  This means that the submitted PDF should not include the authors' names, and any references to your own work should be cited in a way that does not reveal that it was authored by you. Submissions that are not properly anonymized may be rejected without review.",
+      submitinstructionlink:
+        "https://cmt3.research.microsoft.com/docs/help/general/account-creation.html",
       submissionlink:
         "https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FTrustMLDeepIndaba2023",
-      resourcelink:
+      formatlink:
         "https://drive.google.com/drive/folders/1K8yBWIkQMO0D5o_XfY6K63MI3RzGopAf",
       tutoriallink:
         "https://www.youtube.com/watch?v=2wNEfoxcRYw&ab_channel=FES-CongressonFoodandEnvironmentalSecurity",
@@ -511,17 +598,46 @@ export const workshops = {
       title: "Trustworthy AI Workshop 2022",
       description: "",
       topics: [
-        "Audit techniques in data and ML models",
-        "Advances in algorithms and metrics for robust ML",
-        "Uncertainty quantification techniques and Fairness studies",
-        "Applications and research in data and model Privacy/Security",
-        "Methodologies or case studies for explainable and transparent AI",
+        {
+          title: "",
+          description: "Audit techniques in data and ML models",
+        },
+        {
+          title: "",
+          description: "Advances in algorithms and metrics for robust ML",
+        },
+        {
+          title: "",
+          description:
+            "Uncertainty quantification techniques and Fairness studies",
+        },
+        {
+          title: "",
+          description:
+            "Applications and research in data and model Privacy/Security",
+        },
+        {
+          title: "",
+          description:
+            "Methodologies or case studies for explainable and transparent AI",
+        },
       ],
       othertopics: [],
+      topicofsub: "",
+      additionalinfo: "",
+      formatting: "The short paper must be formatted using the",
+      formatname: "DLI Author Kit",
       abstractsubdate: "1st of August 2022",
+      notificationdate: null,
       submitname: "Form",
+      submitinstruction: "",
+      submittype: "form",
+      dualsubpolicy: "",
+      anonymization:
+        "Our peer review process is fully anonymous, meaning reviewers will not know the authors’ identities, and authors will not know the reviewers' identities. Please ensure that you anonymize your submission.  This means that the submitted PDF should not include the authors' names, and any references to your own work should be cited in a way that does not reveal that it was authored by you. Submissions that are not properly anonymized may be rejected without review.",
+      submitinstructionlink: null,
       submissionlink: "https://forms.gle/19aJixpRX4PpvZZt8",
-      resourcelink:
+      formatlink:
         "https://drive.google.com/drive/folders/1K8yBWIkQMO0D5o_XfY6K63MI3RzGopAf",
       tutoriallink: null,
     },

@@ -410,8 +410,10 @@ const Workshop = (props) => {
                     </Typography>
                   )}
                   <Typography sx={{ fontSize: 15 }}>
-                    We’re looking for extended abstracts that will be presented
-                    as contributed talks (10 to 15 minutes) related to:
+                    We welcome submissions across disciplines, including
+                    computer science, law, social sciences, ethics, and policy.
+                    Interdisciplinary approaches are highly encouraged. General
+                    areas of interest include but are not limited to:
                   </Typography>
                   <Stack sx={{ pl: 5 }} spacing={1}>
                     {workshops[activeWs].cfp?.topics?.map((tps, index) => (
@@ -423,10 +425,62 @@ const Workshop = (props) => {
                       >
                         <SquareIcon sx={{ fontSize: isMobile ? 18 : 9 }} />
                         <Typography sx={{ fontSize: isMobile ? 30 : 14 }}>
-                          {tps}
+                          <span style={{ fontWeight: 700 }}>{tps.title}</span>{" "}
+                          {tps.description}
                         </Typography>
                       </Stack>
                     ))}
+                  </Stack>
+                  {workshops[activeWs].cfp?.additionalinfo && (
+                    <Typography sx={{ fontSize: 15 }}>
+                      {workshops[activeWs].cfp?.additionalinfo}
+                    </Typography>
+                  )}
+                  <Box>
+                    <Typography
+                      sx={{ fontSize: isMobile ? 33 : 16, fontWeight: 700 }}
+                    >
+                      Anonymization
+                    </Typography>
+                    <Typography sx={{ fontSize: isMobile ? 30 : 14 }}>
+                      {workshops[activeWs].cfp?.anonymization}
+                    </Typography>
+                  </Box>
+                  <Box>
+                    <Typography
+                      sx={{ fontSize: isMobile ? 33 : 16, fontWeight: 700 }}
+                    >
+                      Important Prerequisite
+                    </Typography>
+                    <Typography sx={{ fontSize: isMobile ? 30 : 14 }}>
+                      Attendance at indaba requires a
+                      <span
+                        onClick={() =>
+                          handExternalLink(
+                            `https://deeplearningindaba.com/${workshops[activeWs].year}/`,
+                          )
+                        }
+                        style={customStyles.externalLinks}
+                      >
+                        {" "}
+                        pre-application
+                      </span>
+                      . To submit a paper to our workshop, at least one author
+                      must be accepted at Indaba and have a ticket
+                    </Typography>
+                  </Box>
+                  <Stack direction="row" alignItems="center" spacing={1}>
+                    <Typography
+                      sx={{ fontSize: isMobile ? 33 : 16, fontWeight: 700 }}
+                    >
+                      Contact:
+                    </Typography>
+                    <Typography sx={{ fontSize: isMobile ? 30 : 14 }}>
+                      For questions, please contact{" "}
+                      <span style={customStyles.externalLinks}>
+                        trustaideepindaba@gmail.com
+                      </span>
+                    </Typography>
                   </Stack>
                 </Stack>
               </Grid>
@@ -440,6 +494,40 @@ const Workshop = (props) => {
                   >
                     Submissions & Dates
                   </Typography>
+                  {workshops[activeWs].cfp?.topicofsub && (
+                    <Box>
+                      <Typography
+                        sx={{ fontSize: isMobile ? 33 : 16, fontWeight: 700 }}
+                      >
+                        Topic of the submission
+                      </Typography>
+                      <Typography sx={{ fontSize: isMobile ? 30 : 14 }}>
+                        {workshops[activeWs].cfp?.topicofsub}
+                      </Typography>
+                    </Box>
+                  )}
+                  {workshops[activeWs].cfp?.submittype === "cmt" && (
+                    <Box>
+                      <Typography
+                        sx={{ fontSize: isMobile ? 33 : 16, fontWeight: 700 }}
+                      >
+                        Submission instructions
+                      </Typography>
+                      <Typography sx={{ fontSize: isMobile ? 30 : 14 }}>
+                        {workshops[activeWs].cfp?.submitinstruction}{" "}
+                        <span
+                          onClick={() =>
+                            handExternalLink(
+                              workshops[activeWs].cfp?.submitinstructionlink,
+                            )
+                          }
+                          style={customStyles.externalLinks}
+                        >
+                          link
+                        </span>
+                      </Typography>
+                    </Box>
+                  )}
                   <Typography sx={{ fontSize: isMobile ? 30 : 14 }}>
                     If you’re interested in presenting your work at TrustAI
                     Workshop, please submit your extended abstract{" "}
@@ -455,36 +543,38 @@ const Workshop = (props) => {
                     </span>{" "}
                     before{" "}
                     <span style={{ color: "red" }}>
-                      {workshops[activeWs].cfp?.abstractsubdate}
+                      {workshops[activeWs].cfp?.abstractsubdate}.
                     </span>
-                    . The short paper must be formatted using the{" "}
-                    <span
-                      onClick={() =>
-                        handExternalLink(workshops[activeWs].cfp?.resourcelink)
-                      }
-                      style={customStyles.externalLinks}
-                    >
-                      DLI Author Kit
-                    </span>
-                    .
                   </Typography>
-                  {activeWs === "taid2023" && (
+                  <Box>
+                    <Typography
+                      sx={{ fontSize: isMobile ? 33 : 16, fontWeight: 700 }}
+                    >
+                      Formatting and Length
+                    </Typography>
                     <Typography sx={{ fontSize: isMobile ? 30 : 14 }}>
-                      This year we will use CMT to manage the submissions, if
-                      this is your first time using the platform, you can watch
-                      a great tutorial{" "}
+                      {workshops[activeWs].cfp?.formatting}{" "}
                       <span
                         onClick={() =>
-                          handExternalLink(
-                            workshops[activeWs].cfp?.tutoriallink,
-                          )
+                          handExternalLink(workshops[activeWs].cfp?.formatlink)
                         }
                         style={customStyles.externalLinks}
                       >
-                        here
-                      </span>{" "}
-                      on how to create an account and make a submission.
+                        {workshops[activeWs].cfp?.formatname}
+                      </span>
                     </Typography>
+                  </Box>
+                  {workshops[activeWs].cfp?.dualsubpolicy && (
+                    <Box>
+                      <Typography
+                        sx={{ fontSize: isMobile ? 33 : 16, fontWeight: 700 }}
+                      >
+                        No dual submission policy
+                      </Typography>
+                      <Typography sx={{ fontSize: isMobile ? 30 : 14 }}>
+                        {workshops[activeWs].cfp?.dualsubpolicy}
+                      </Typography>
+                    </Box>
                   )}
                   <Box>
                     <Stack direction="row" alignItems="center" spacing={1}>
@@ -506,6 +596,27 @@ const Workshop = (props) => {
                         {workshops[activeWs].cfp?.abstractsubdate}
                       </Typography>
                     </Stack>
+                    {workshops[activeWs].cfp?.notificationdate && (
+                      <Stack direction="row" alignItems="center" spacing={1}>
+                        <Typography
+                          sx={{
+                            fontSize: isMobile ? 30 : 14,
+                            fontWeight: 700,
+                            color: "black",
+                          }}
+                        >
+                          Notifications:
+                        </Typography>
+                        <Typography
+                          sx={{
+                            fontSize: isMobile ? 30 : 14,
+                            color: "#90a959",
+                          }}
+                        >
+                          {workshops[activeWs].cfp?.notificationdate}
+                        </Typography>
+                      </Stack>
+                    )}
                     <Stack direction="row" alignItems="center" spacing={1}>
                       <Typography
                         sx={{
@@ -530,7 +641,7 @@ const Workshop = (props) => {
                         {workshops[activeWs].cfp?.submitname}
                       </Typography>
                     </Stack>
-                    {activeWs === "taid2023" && (
+                    {workshops[activeWs].cfp?.submittype === "cmt" && (
                       <Stack direction="row" alignItems="center" spacing={1}>
                         <Typography
                           sx={{
@@ -539,7 +650,7 @@ const Workshop = (props) => {
                             color: "black",
                           }}
                         >
-                          CMT tutorial:
+                          Microsoft CMT tutorial:
                         </Typography>
                         <Typography
                           onClick={() =>
