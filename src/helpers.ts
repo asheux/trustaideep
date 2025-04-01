@@ -37,7 +37,7 @@ export const sociallinks = [
   },
   {
     name: "twitter",
-    link: "https://x.com/TrustAi38117",
+    link: "https://x.com/TrustAI_Indaba",
   },
 ];
 
