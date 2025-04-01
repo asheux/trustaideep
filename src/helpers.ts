@@ -30,6 +30,16 @@ export const settings = [
 
 export const activeSchedule = "2025";
 export const activePage = "taid2025";
+export const sociallinks = [
+  {
+    name: "bluesky",
+    link: "https://bsky.app/profile/trustai.bsky.social",
+  },
+  {
+    name: "twitter",
+    link: "https://x.com/TrustAi38117",
+  },
+];
 
 export const workshops = {
   taid2025: {
@@ -54,7 +64,7 @@ export const workshops = {
       },
       {
         name: "Kush R. Varshney",
-        image: "/images/2025/kushvarshney.webp",
+        image: "/images/2025/kushvarshney.jpg",
         bio: "Dr. Varshney is an IBM Fellow based at the Thomas J. Watson Research Center, Yorktown Heights, NY, where he directs Human-Centered Trustworthy AI research. He was a visiting scientist at IBM Research - Africa, Nairobi, Kenya in 2019. He was the founding co-director of the IBM Science for Social Good initiative from 2015-2023. He applies data science and predictive analytics to human capital management, healthcare, olfaction, computational creativity, public affairs, international development, and algorithmic fairness, which has led to the Extraordinary IBM Research Technical Accomplishment for contributions to workforce innovation and enterprise transformation, and IBM Corporate Technical Awards for Trustworthy AI and for AI-Powered Employee Journey.",
         topic: "",
         expanded: false,

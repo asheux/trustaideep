@@ -391,7 +391,7 @@ const Workshop = (props) => {
             </Typography>
           </Stack>
         </Box>
-        {workshops[activeWs]?.cfp ? (
+        {workshops[activeWs]?.year !== 2025 ? (
           <Container sx={{ mt: 4, mb: 4 }}>
             <Grid container spacing={2}>
               <Grid item xs={isMobile ? 12 : 8}>
@@ -930,7 +930,6 @@ const Workshop = (props) => {
             .
           </Typography>
         </Container>
-        <Box sx={{ mb: 10 }}></Box>
       </Box>
     </React.Fragment>
   );
