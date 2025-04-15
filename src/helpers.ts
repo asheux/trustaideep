@@ -65,10 +65,10 @@ export const workshops = {
       {
         name: "Kush R. Varshney",
         image: "/images/2025/kushvarshney.jpg",
-        bio: "Dr. Varshney is an IBM Fellow based at the Thomas J. Watson Research Center, Yorktown Heights, NY, where he directs Human-Centered Trustworthy AI research. He was a visiting scientist at IBM Research - Africa, Nairobi, Kenya in 2019. He was the founding co-director of the IBM Science for Social Good initiative from 2015-2023. He applies data science and predictive analytics to human capital management, healthcare, olfaction, computational creativity, public affairs, international development, and algorithmic fairness, which has led to the Extraordinary IBM Research Technical Accomplishment for contributions to workforce innovation and enterprise transformation, and IBM Corporate Technical Awards for Trustworthy AI and for AI-Powered Employee Journey.",
+        bio: "Dr. Varshney is an IBM Fellow based at the Thomas J. Watson Research Center, Yorktown Heights, NY, where he directs Human-Centered Trustworthy AI research. He was a visiting scientist at IBM Research - Africa, Nairobi, Kenya in 2019. He was the founding co-director of the IBM Science for Social Good initiative from 2015-2023. He applies data science and predictive analytics to human capital management, healthcare, olfaction, computational creativity, public affairs, international development, and algorithmic fairness, which has led to independently-published a book entitled 'Trustworthy Machine Learning' in 2022. He is currently the general chair for the 2025 AAAI/ACM Conference on Artificial Intelligence, Ethics, and Society.",
         topic: "",
         expanded: false,
-        link: "https://research.ibm.com/people/kush-varshney",
+        link: "https://krvarshney.github.io/",
         affiliate: "Fellow at IBM Research",
       },
     ],
@@ -109,8 +109,8 @@ export const workshops = {
       additionalinfo:
         "All accepted submissions will have the opportunity to present their work as a poster. Additionally, selected submissions will be invited to present their work through a short contributed talk during the workshop.",
       formatting:
-        "The abstract must follow the XX formatting guidelines. We accept extended abstracts of up to 4 pages, plus unlimited pages for references",
-      formatname: "XXXX",
+        "We accept extended abstracts of up to 4 pages, plus unlimited pages for references. The abstract must follow the same Latex format as Deep Learn Indaba  formatting guidelines (PMLR) available here:",
+      formatname: "CTAN",
       abstractsubdate: "June 25th, 2025",
       notificationdate: "July 28th, 2025",
       submitname: "Microsoft CMT",
@@ -120,12 +120,11 @@ export const workshops = {
       dualsubpolicy:
         "It is permitted to submit work that is under review or has been accepted for publication elsewhere. If your work has already been accepted at another venue, please submit a de-anonymized version and indicate this in the CMT submission form.",
       anonymization:
-        "Our peer review process is fully anonymous, meaning reviewers will not know the authors’ identities, and authors will not know the reviewers' identities. Please ensure that you anonymize your submission.  This means that the submitted PDF should not include the authors' names, and any references to your own work should be cited in a way that does not reveal that it was authored by you. Submissions that are not properly anonymized may be rejected without review.",
+        "Our peer review process is fully anonymous, meaning reviewers will not know the authors’ identities, and authors will not know the reviewers' identities. Please ensure that you anonymize your submission. This means that the submitted PDF should not include the authors' names, and any references to your own work should be cited in a way that does not reveal that it was authored by you. Submissions that are not properly anonymized may be rejected without review.",
       submitinstructionlink:
         "https://cmt3.research.microsoft.com/docs/help/general/account-creation.html",
-      submissionlink:
-        "https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2F",
-      formatlink: "",
+      submissionlink: "",
+      formatlink: "https://ctan.org/tex-archive/macros/latex/contrib/jmlr",
       tutoriallink:
         "https://www.youtube.com/watch?v=2wNEfoxcRYw&ab_channel=FES-CongressonFoodandEnvironmentalSecurity",
     },

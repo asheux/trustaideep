@@ -391,7 +391,7 @@ const Workshop = (props) => {
             </Typography>
           </Stack>
         </Box>
-        {workshops[activeWs]?.year !== 2025 ? (
+        {workshops[activeWs]?.cfp ? (
           <Container sx={{ mt: 4, mb: 4 }}>
             <Grid container spacing={2}>
               <Grid item xs={isMobile ? 12 : 8}>
@@ -436,6 +436,18 @@ const Workshop = (props) => {
                       {workshops[activeWs].cfp?.additionalinfo}
                     </Typography>
                   )}
+                  {workshops[activeWs].cfp?.topicofsub && (
+                    <Box>
+                      <Typography
+                        sx={{ fontSize: isMobile ? 33 : 16, fontWeight: 700 }}
+                      >
+                        Topic of the submission
+                      </Typography>
+                      <Typography sx={{ fontSize: isMobile ? 30 : 14 }}>
+                        {workshops[activeWs].cfp?.topicofsub}
+                      </Typography>
+                    </Box>
+                  )}
                   <Box>
                     <Typography
                       sx={{ fontSize: isMobile ? 33 : 16, fontWeight: 700 }}
@@ -466,22 +478,10 @@ const Workshop = (props) => {
                         pre-application
                       </span>
                       . To submit a paper to our workshop, at least one author
-                      must be accepted at Indaba and have a ticket
+                      must be accepted at Indaba at the time of the workshop to
+                      be able to present the work on August 21st.
                     </Typography>
                   </Box>
-                  <Stack direction="row" alignItems="center" spacing={1}>
-                    <Typography
-                      sx={{ fontSize: isMobile ? 33 : 16, fontWeight: 700 }}
-                    >
-                      Contact:
-                    </Typography>
-                    <Typography sx={{ fontSize: isMobile ? 30 : 14 }}>
-                      For questions, please contact{" "}
-                      <span style={customStyles.externalLinks}>
-                        trustaideepindaba@gmail.com
-                      </span>
-                    </Typography>
-                  </Stack>
                 </Stack>
               </Grid>
               <Grid item xs={isMobile ? 12 : 4}>
@@ -494,18 +494,6 @@ const Workshop = (props) => {
                   >
                     Submissions & Dates
                   </Typography>
-                  {workshops[activeWs].cfp?.topicofsub && (
-                    <Box>
-                      <Typography
-                        sx={{ fontSize: isMobile ? 33 : 16, fontWeight: 700 }}
-                      >
-                        Topic of the submission
-                      </Typography>
-                      <Typography sx={{ fontSize: isMobile ? 30 : 14 }}>
-                        {workshops[activeWs].cfp?.topicofsub}
-                      </Typography>
-                    </Box>
-                  )}
                   {workshops[activeWs].cfp?.submittype === "cmt" && (
                     <Box>
                       <Typography
@@ -523,8 +511,9 @@ const Workshop = (props) => {
                           }
                           style={customStyles.externalLinks}
                         >
-                          link
+                          here
                         </span>
+                        .
                       </Typography>
                     </Box>
                   )}
@@ -585,7 +574,7 @@ const Workshop = (props) => {
                           color: "black",
                         }}
                       >
-                        Deadline:
+                        Submission Deadline:
                       </Typography>
                       <Typography
                         sx={{
@@ -663,11 +652,24 @@ const Workshop = (props) => {
                             fontSize: isMobile ? 30 : 14,
                           }}
                         >
-                          here
+                          Here
                         </Typography>
                       </Stack>
                     )}
                   </Box>
+                  <Stack>
+                    <Typography
+                      sx={{ fontSize: isMobile ? 33 : 16, fontWeight: 700 }}
+                    >
+                      Contact:
+                    </Typography>
+                    <Typography sx={{ fontSize: isMobile ? 30 : 14 }}>
+                      For questions, please contact{" "}
+                      <span style={customStyles.externalLinks}>
+                        trustaideepindaba@gmail.com
+                      </span>
+                    </Typography>
+                  </Stack>
                 </Stack>
               </Grid>
             </Grid>
