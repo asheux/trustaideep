@@ -54,8 +54,8 @@ export const workshops = {
     speakers: [
       {
         name: "Sanmi Koyejo",
-        image: "/images/2025/Koyejo-Profile-scaled.jpg",
-        bio: "Sanmi (Oluwasanmi) Koyejo is an Assistant Professor in the Department of Computer Science at Stanford University and an adjunct Associate Professor in the Department of Computer Science at the University of Illinois at Urbana-Champaign. Koyejo leads Stanford Trustworthy AI Research (STAIR), working to develop the principles and practice of trustworthy machine learning, focusing on applications to neuroscience and healthcare. Koyejo completed a Ph.D. at the University of Texas at Austin, and postdoctoral research at Stanford University. Koyejo has been the recipient of several awards, including a best paper award from the conference on uncertainty in artificial intelligence, a Skip Ellis Early Career Award, a Sloan Fellowship, a Terman faculty fellowship, an NSF CAREER award, a Kavli Fellowship, an IJCAI early career spotlight, and a trainee award from the Organization for Human Brain Mapping. Koyejo spends time at Google as a part of the Brain team, serves on the Neural Information Processing Systems Foundation Board, the Association for Health Learning and Inference Board, and as president of the Black in AI organization.",
+        image: "/images/2025/sanmik.png",
+        bio: "Sanmi Koyejo is an assistant professor in the Department of Computer Science at Stanford University and a co-founder of Virtue AI. At Stanford, Koyejo leads the Stanford Trustworthy Artificial Intelligence (STAIR) lab, which works to develop the principles and practice of trustworthy AI, focusing on applications to science and healthcare. Koyejo has been the recipient of several awards, including a Skip Ellis Early Career Award, a Presidential Early Career Award for Scientists and Engineers (PECASE), and a Sloan Fellowship. Koyejo serves on the Neural Information Processing Systems Foundation Board, the Association for Health Learning and Inference Board, and as president of the Black in AI Board.",
         topic: "",
         expanded: false,
         link: "https://cs.stanford.edu/~sanmi/index.html",
@@ -64,7 +64,7 @@ export const workshops = {
       },
       {
         name: "Kush R. Varshney",
-        image: "/images/2025/kushvarshney.jpg",
+        image: "/images/2025/kushvarshney.png",
         bio: "Dr. Varshney is an IBM Fellow based at the Thomas J. Watson Research Center, Yorktown Heights, NY, where he directs Human-Centered Trustworthy AI research. He was a visiting scientist at IBM Research - Africa, Nairobi, Kenya in 2019. He was the founding co-director of the IBM Science for Social Good initiative from 2015-2023. He applies data science and predictive analytics to human capital management, healthcare, olfaction, computational creativity, public affairs, international development, and algorithmic fairness, which has led to independently-published a book entitled 'Trustworthy Machine Learning' in 2022. He is currently the general chair for the 2025 AAAI/ACM Conference on Artificial Intelligence, Ethics, and Society.",
         topic: "",
         expanded: false,
@@ -114,6 +114,8 @@ export const workshops = {
       abstractsubdate: "June 25th, 2025",
       notificationdate: "July 28th, 2025",
       submitname: "Microsoft CMT",
+      whycmt:
+        "The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.",
       submitinstruction:
         "Authors are required to register an account on the CMT (Conference Management Toolkit) system in order to submit their extended abstracts. If you do not have a CMT account, please create one by following the instructions provided",
       submittype: "cmt",
@@ -333,6 +335,8 @@ export const workshops = {
       abstractsubdate: "July 28th, 2023",
       notificationdate: "",
       submitname: "Microsoft CMT",
+      whycmt:
+        "The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.",
       submitinstruction:
         "Authors are required to register an account on the CMT (Conference Management Toolkit) system in order to submit their extended abstracts. If you do not have a CMT account, please create one by following the instructions provided",
       submittype: "cmt",
@@ -639,6 +643,7 @@ export const workshops = {
       abstractsubdate: "1st of August 2022",
       notificationdate: null,
       submitname: "Form",
+      whycmt: "",
       submitinstruction: "",
       submittype: "form",
       dualsubpolicy: "",

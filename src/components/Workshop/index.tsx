@@ -670,6 +670,18 @@ const Workshop = (props) => {
                       </span>
                     </Typography>
                   </Stack>
+                  {workshops[activeWs].cfp?.whycmt && (
+                    <Box>
+                      <Typography
+                        sx={{ fontSize: isMobile ? 33 : 16, fontWeight: 700 }}
+                      >
+                        Acknowledgment
+                      </Typography>
+                      <Typography sx={{ fontSize: isMobile ? 30 : 14 }}>
+                        {workshops[activeWs].cfp?.whycmt}
+                      </Typography>
+                    </Box>
+                  )}
                 </Stack>
               </Grid>
             </Grid>
