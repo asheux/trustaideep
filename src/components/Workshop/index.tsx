@@ -759,7 +759,7 @@ const Workshop = (props) => {
                           height: eorganizers[index]?.expanded
                             ? "auto"
                             : organizer.bio?.length >= 400
-                              ? 100
+                              ? 180
                               : "auto",
                           overflow: "hidden",
                           transition: "height 0.3s ease",
@@ -867,7 +867,7 @@ const Workshop = (props) => {
                               height: eadvisors[index]?.expanded
                                 ? "auto"
                                 : advisor.bio?.length >= 400
-                                  ? 100
+                                  ? 180
                                   : "auto",
                               overflow: "hidden",
                               transition: "height 0.3s ease",
