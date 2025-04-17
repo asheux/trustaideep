@@ -125,7 +125,7 @@ export const workshops = {
         "Our peer review process is fully anonymous, meaning reviewers will not know the authors’ identities, and authors will not know the reviewers' identities. Please ensure that you anonymize your submission. This means that the submitted PDF should not include the authors' names, and any references to your own work should be cited in a way that does not reveal that it was authored by you. Submissions that are not properly anonymized may be rejected without review.",
       submitinstructionlink:
         "https://cmt3.research.microsoft.com/docs/help/general/account-creation.html",
-      submissionlink: "",
+      submissionlink: "https://cmt3.research.microsoft.com/TrustAIDeepIndaba2025",
       formatlink: "https://ctan.org/tex-archive/macros/latex/contrib/jmlr",
       tutoriallink:
         "https://www.youtube.com/watch?v=2wNEfoxcRYw&ab_channel=FES-CongressonFoodandEnvironmentalSecurity",
