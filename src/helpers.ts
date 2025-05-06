@@ -124,6 +124,7 @@ export const workshops = {
       abstractsubdate: "June 25th, 2025",
       notificationdate: "July 28th, 2025",
       submitname: "Microsoft CMT",
+      call_for_reviewers: "In addition to submissions, we’re also seeking volunteers to contribute to the workshop's success by serving as reviewers. Reviewers will be asked to provide thoughtful and constructive feedback on approximately 1-3 submitted papers. If you are interested in volunteering for our Program Committee, please complete the sign-up form at",
       whycmt:
         "The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.",
       submitinstruction:
@@ -346,6 +347,7 @@ export const workshops = {
       abstractsubdate: "July 28th, 2023",
       notificationdate: "",
       submitname: "Microsoft CMT",
+      call_for_reviewers: null,
       whycmt:
         "The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.",
       submitinstruction:
@@ -654,6 +656,7 @@ export const workshops = {
       abstractsubdate: "1st of August 2022",
       notificationdate: null,
       submitname: "Form",
+      call_for_reviewers: null,
       whycmt: "",
       submitinstruction: "",
       submittype: "form",

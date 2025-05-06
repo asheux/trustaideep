@@ -482,6 +482,19 @@ const Workshop = (props) => {
                       be able to present the work on August 21st.
                     </Typography>
                   </Box>
+                  <Stack>
+                    <Typography
+                      sx={{ fontSize: isMobile ? 33 : 16, fontWeight: 700 }}
+                    >
+                      Contact:
+                    </Typography>
+                    <Typography sx={{ fontSize: isMobile ? 30 : 14 }}>
+                      For questions, please contact{" "}
+                      <span style={customStyles.externalLinks}>
+                        trustaideepindaba@gmail.com
+                      </span>
+                    </Typography>
+                  </Stack>
                 </Stack>
               </Grid>
               <Grid item xs={isMobile ? 12 : 4}>
@@ -562,6 +575,18 @@ const Workshop = (props) => {
                       </Typography>
                       <Typography sx={{ fontSize: isMobile ? 30 : 14 }}>
                         {workshops[activeWs].cfp?.dualsubpolicy}
+                      </Typography>
+                    </Box>
+                  )}
+                  {workshops[activeWs].cfp?.call_for_reviewers && (
+                    <Box>
+                      <Typography
+                        sx={{ fontSize: isMobile ? 33 : 16, fontWeight: 700 }}
+                      >
+                        Call for Reviewers
+                      </Typography>
+                      <Typography sx={{ fontSize: isMobile ? 30 : 14 }}>
+                        {workshops[activeWs].cfp?.call_for_reviewers}
                       </Typography>
                     </Box>
                   )}
@@ -657,19 +682,6 @@ const Workshop = (props) => {
                       </Stack>
                     )}
                   </Box>
-                  <Stack>
-                    <Typography
-                      sx={{ fontSize: isMobile ? 33 : 16, fontWeight: 700 }}
-                    >
-                      Contact:
-                    </Typography>
-                    <Typography sx={{ fontSize: isMobile ? 30 : 14 }}>
-                      For questions, please contact{" "}
-                      <span style={customStyles.externalLinks}>
-                        trustaideepindaba@gmail.com
-                      </span>
-                    </Typography>
-                  </Stack>
                   {workshops[activeWs].cfp?.whycmt && (
                     <Box>
                       <Typography
