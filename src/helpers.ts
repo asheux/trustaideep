@@ -71,6 +71,16 @@ export const workshops = {
         link: "https://krvarshney.github.io/",
         affiliate: "Fellow at IBM Research",
       },
+      {
+        name: "Dr. Kutom Wakunuma",
+        image: "/images/2025/KutomaWakunuma.jpg",
+        bio: "Dr Kutoma Wakunuma is an Associate Professor at De Montfort University and Co-Director of the Centre for Computing and Social Responsibility. She specialises in the social and ethical implications of emerging technologies, responsible innovation and AI governance in both the Global North and the Global South. She has co-edited influential books including Responsible AI in Africa and Trustworthy AI: African Perspectives. Dr Wakunuma serves as a European Commission Ethics Advisor and Evaluator. She is a member of Centre for AI and Digital Policy (CAIDP) Global Academic Network. Dr Wakunuma is also a member of UNESCO’s Women for Ethical AI as well as UNESCO’s AI Ethics Experts Without Borders. She is recognised among the Top 100 Brilliant Women in AI Ethics in the 2025. Dr Wakunuma is a passionate advocate for an inclusive and globally representative AI discourse and is frequently invited to speak at high-level international forums, including the UNs Science Summit of the General Assembly; the UN Academic Impact Commission as well as the African Commission’s Human and People’s Rights on AI and other Emerging Technologies, where her insights inform and inspire cross-sector conversations on AI, ethics and society. Dr Wakunuma has facilitated and conducted AI training workshops aimed at parliamentarians, policymakers and civil society organisations in the Global South and has contributed to Zambia’s National AI Strategy by bringing critical perspectives on responsible AI, ethics, inclusion, diversity and equitable AI development, access and use.",
+        topic: "",
+        expanded: false,
+        link: null,
+        affiliate:
+          "Associate Professor at De Montfort University and Co-Director of the Centre for Computing and Social Responsibility",
+      },
     ],
     cfp: {
       title: "Trustworthy AI Workshop @ Deep Learning Indaba 2025",
@@ -125,7 +135,8 @@ export const workshops = {
         "Our peer review process is fully anonymous, meaning reviewers will not know the authors’ identities, and authors will not know the reviewers' identities. Please ensure that you anonymize your submission. This means that the submitted PDF should not include the authors' names, and any references to your own work should be cited in a way that does not reveal that it was authored by you. Submissions that are not properly anonymized may be rejected without review.",
       submitinstructionlink:
         "https://cmt3.research.microsoft.com/docs/help/general/account-creation.html",
-      submissionlink: "https://cmt3.research.microsoft.com/TrustAIDeepIndaba2025",
+      submissionlink:
+        "https://cmt3.research.microsoft.com/TrustAIDeepIndaba2025",
       formatlink: "https://ctan.org/tex-archive/macros/latex/contrib/jmlr",
       tutoriallink:
         "https://www.youtube.com/watch?v=2wNEfoxcRYw&ab_channel=FES-CongressonFoodandEnvironmentalSecurity",
