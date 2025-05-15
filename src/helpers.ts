@@ -46,7 +46,7 @@ export const workshops = {
     name: "TrustAIDeepLIndaba2025",
     title: "TrustAI Workshop: Building Public Awareness and Engagement",
     year: 2025,
-    datetime: "August 21, 9 am to 4pm",
+    datetime: "August 21st, 9 am to 4pm",
     location: "Deep Learning Indaba 2025, Kigali Rwanda",
     locationimage: "/images/2022/indaba.jpg",
     about:
@@ -121,7 +121,7 @@ export const workshops = {
       formatting:
         "We accept extended abstracts of up to 4 pages, plus unlimited pages for references. The abstract must follow the same Latex format as Deep Learn Indaba  formatting guidelines (PMLR) available here:",
       formatname: "CTAN",
-      abstractsubdate: "June 25th, 2025",
+      abstractsubdate: "June 25th, 2025 23:59 AoE",
       notificationdate: "July 28th, 2025",
       submitname: "Microsoft CMT",
       call_for_reviewers: "In addition to submissions, we’re also seeking volunteers to contribute to the workshop's success by serving as reviewers. Reviewers will be asked to provide thoughtful and constructive feedback on approximately 1-3 submitted papers. If you are interested in volunteering for our Program Committee, please complete the sign-up form at",
