@@ -81,6 +81,16 @@ export const workshops = {
         affiliate:
           "Associate Professor at De Montfort University and Co-Director of the Centre for Computing and Social Responsibility",
       },
+      {
+        name: "Mercy Asiedu",
+        image: "/images/2025/mercyasiedu.png",
+        bio: "Mercy Asiedu is a senior research scientist at Google Research, San Francisco, where she works on using machine learning and generative AI for impact driven research for health. Before that, she was a Schmidt Science Postdoctoral Research Fellow at MIT working on interdisciplinary research projects using generative AI methods to improve mobile ultrasound imaging. She also worked on projects researching the use of language models to improve comprehension of health notes for breast oncology patients. She received her PhD in Biomedical Engineering and a certificate in Global health from Duke University. Her dissertation focused on the research and development of a low-cost imaging device and machine learning algorithms to reduce barriers to cervical cancer screening. She has won several awards for her work including the Inaugural Patrick J. McGovern Tech for Humanity Changemaker Awards, the Lemelson-MIT Graduate Student Inventor Award, and Velji Emerging Leader in Global Health award. Additionally, she is a co-founder of GAPHealth Technologies. She received her bachelor’s degree in Biomedical Engineering from the University of Rochester, and high school degree from Holy Child Secondary School, Cape Coast, Ghana.",
+        topic: "",
+        expanded: false,
+        link: "https://mercynasiedu.com/",
+        affiliate:
+          "Senior Research Scientist at Google Research, San Francisco",
+      }
     ],
     cfp: {
       title: "Trustworthy AI Workshop @ Deep Learning Indaba 2025",
