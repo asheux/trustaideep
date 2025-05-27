@@ -9,10 +9,10 @@ import {
   Stack,
   Divider,
 } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 import { Link } from "react-router-dom";
 
 // App related imports
-import Footer from "src/components/Footer";
 import { customStyles } from "src/styles";
 import { isMobile, workshops } from "src/helpers";
 
@@ -24,6 +24,8 @@ const Workshop = (props) => {
   const [eisls, setEIsls] = useState([]);
   const [epanelists, setEPanelists] = useState([]);
   const mainContentRef = useRef<HTMLDivElement>(null);
+
+  const theme = useTheme();
 
   const toggleExpandS = (e) => {
     const index = e.currentTarget.getAttribute("id");
@@ -105,18 +107,32 @@ const Workshop = (props) => {
     }
   };
 
+  const questions = [
+    "What some researchers think trustworthy AI is about?",
+    "What LLMs thinks trustworthy AI is about?",
+    "What trustworthy AI is actually about?",
+  ];
+
   return (
     <React.Fragment>
-      <Box ref={mainContentRef}>
+      <Box
+        ref={mainContentRef}
+        sx={{
+          overflowY: "auto",
+        }}
+      >
         <Box
           sx={{
             backgroundColor: "#e6ecda",
             pt: 2,
-            pb: 8,
             mt: isMobile ? 10 : -2,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: 350,
           }}
         >
-          <Stack sx={{ mt: 15, textAlign: "center" }}>
+          <Stack>
             <Typography
               variant="h2"
               sx={{
@@ -147,62 +163,64 @@ const Workshop = (props) => {
               </Typography>
             )}
           </Stack>
-          <Box
+        </Box>
+        {!isMobile && (
+          <Container
             sx={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
+              position: "relative",
+              color: theme.palette.text.primary,
             }}
           >
-            {!isMobile && (
-              <Box
+            <Box
+              sx={{
+                position: "absolute",
+                top: -70,
+                left: "50%",
+                transform: "translateX(-50%)",
+                backgroundColor: "#fff",
+                padding: 2,
+                width: "70%",
+                boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
+              }}
+            >
+              {workshops[activeWs].title && (
+                <>
+                  <Typography variant="h6">
+                    {workshops[activeWs].title}
+                  </Typography>
+                  <Box sx={{ mb: 2 }}>
+                    <Divider />
+                  </Box>
+                </>
+              )}
+              <Typography
                 sx={{
-                  backgroundColor: "#fff",
-                  padding: 2,
-                  width: "50%",
-                  boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
-                  mt: 4,
+                  fontSize: 15,
                 }}
               >
-                {workshops[activeWs].title && (
-                  <>
-                    <Typography variant="h6">
-                      {workshops[activeWs].title}
+                {workshops[activeWs].about}
+              </Typography>
+              <Box sx={{ mt: 2 }}>
+                <Stack direction="row" spacing={0.5} alignItems="center">
+                  <Typography sx={{ fontSize: isMobile ? 30 : 18 }}>
+                    Checkout our
+                  </Typography>
+                  <Link to="call-for-papers">
+                    <Typography
+                      sx={{
+                        fontSize: isMobile ? 30 : 18,
+                        color: "#445029",
+                        cursor: "pointer",
+                      }}
+                    >
+                      Call for Papers
                     </Typography>
-                    <Box sx={{ mb: 2 }}>
-                      <Divider />
-                    </Box>
-                  </>
-                )}
-                <Typography
-                  sx={{
-                    fontSize: 15,
-                  }}
-                >
-                  {workshops[activeWs].about}
-                </Typography>
-                <Box sx={{ mt: 2 }}>
-                  <Stack direction="row" spacing={0.5} alignItems="center">
-                    <Typography sx={{ fontSize: isMobile ? 30 : 18 }}>
-                      Checkout our
-                    </Typography>
-                    <Link to="call-for-papers">
-                      <Typography
-                        sx={{
-                          fontSize: isMobile ? 30 : 18,
-                          color: "#445029",
-                          cursor: "pointer",
-                        }}
-                      >
-                        Call for Papers
-                      </Typography>
-                    </Link>
-                  </Stack>
-                </Box>
+                  </Link>
+                </Stack>
               </Box>
-            )}
-          </Box>
-        </Box>
+            </Box>
+          </Container>
+        )}
         {isMobile && (
           <Box sx={{ p: 5 }}>
             <Typography
@@ -214,6 +232,32 @@ const Workshop = (props) => {
             </Typography>
           </Box>
         )}
+        {isMobile && (
+          <Box sx={{ textAlign: "center", mb: 4 }}>
+            <Box>
+              {questions?.map((question, index) => (
+                <Typography
+                  key={index}
+                  sx={{
+                    color: "#445029",
+                    fontSize: 14,
+                  }}
+                >
+                  {question}
+                </Typography>
+              ))}
+            </Box>
+            <Box>
+              <Typography
+                variant="body2"
+                color="text.secondary"
+                sx={{ float: "middle" }}
+              >
+                Join us and find out
+              </Typography>
+            </Box>
+          </Box>
+        )}
         <Box
           sx={{
             backgroundColor: "#e6ecda",
@@ -222,7 +266,7 @@ const Workshop = (props) => {
             alignItems: "center",
             height: isMobile ? 100 : 60,
             mb: 2,
-            mt: 0.2,
+            mt: 400,
           }}
         >
           <Stack>
@@ -797,7 +841,6 @@ const Workshop = (props) => {
           </Typography>
         </Container>
       </Box>
-      <Footer />
     </React.Fragment>
   );
 };

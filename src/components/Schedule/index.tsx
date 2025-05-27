@@ -95,7 +95,6 @@ const Schedule = () => {
                   color: active === wssy ? "white" : "#445029",
                   p: 1,
                   width: isMobile ? 100 : 50,
-                  zIndex: 1302,
                   textAlign: "center",
                   cursor: "pointer",
                   "&:hover": {

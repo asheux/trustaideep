@@ -8,6 +8,7 @@ const WS2022 = lazy(() => import("src/components/WS2022"));
 const WS2024 = lazy(() => import("src/components/WS2024"));
 const WS2025 = lazy(() => import("src/components/WS2025"));
 const Schedule = lazy(() => import("src/components/Schedule"));
+const CallForPapers = lazy(() => import("src/components/CallForPapers"));
 
 import Layout from "src/components/Layout";
 import { Spinner } from "src/commons/Loader";
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
       { path: "/TrustAIIJCAI2024", element: <WS2024 /> },
       { path: "/TrustAIIndaba2025", element: <WS2025 /> },
       { path: "/schedule", element: <Schedule /> },
+      { path: "/call-for-papers", element: <CallForPapers /> },
       {
         path: "*",
         element: (

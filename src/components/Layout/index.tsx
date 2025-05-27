@@ -42,6 +42,10 @@ const Layout = (props) => {
     navigate("/schedule");
   };
 
+  const handleOpenCfp = () => {
+    navigate("/call-for-papers");
+  };
+
   useEffect(() => {
     if (url) {
       navigate(url);
@@ -80,6 +84,18 @@ const Layout = (props) => {
                     </Typography>
                   </Stack>
                 </Link>
+              </Box>
+              <Box sx={{ flexGrow: 0, mr: 3 }}>
+                <Typography
+                  onClick={handleOpenCfp}
+                  sx={{
+                    ...customStyles.wsProfileName,
+                    color: "white",
+                    cursor: "pointer",
+                  }}
+                >
+                  Call For Papers
+                </Typography>
               </Box>
               <Box sx={{ flexGrow: 0, mr: 3 }}>
                 <Typography

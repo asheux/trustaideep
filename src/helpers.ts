@@ -29,6 +29,7 @@ export const settings = [
 ];
 
 export const activeSchedule = "2025";
+export const activeCfp = "2025";
 export const activePage = "taid2025";
 export const sociallinks = [
   {
@@ -71,26 +72,6 @@ export const workshops = {
         link: "https://krvarshney.github.io/",
         affiliate: "Fellow at IBM Research",
       },
-      {
-        name: "Kutoma Wakunuma",
-        image: "/images/2025/KutomaWakunuma.jpg",
-        bio: "Dr Kutoma Wakunuma is an Associate Professor at De Montfort University and Co-Director of the Centre for Computing and Social Responsibility. She specialises in the social and ethical implications of emerging technologies, responsible innovation and AI governance in both the Global North and the Global South. She has co-edited influential books including Responsible AI in Africa and Trustworthy AI: African Perspectives. Dr Wakunuma serves as a European Commission Ethics Advisor and Evaluator. She is a member of Centre for AI and Digital Policy (CAIDP) Global Academic Network. Dr Wakunuma is also a member of UNESCO’s Women for Ethical AI as well as UNESCO’s AI Ethics Experts Without Borders. She is recognised among the Top 100 Brilliant Women in AI Ethics in the 2025. Dr Wakunuma is a passionate advocate for an inclusive and globally representative AI discourse and is frequently invited to speak at high-level international forums, including the UNs Science Summit of the General Assembly; the UN Academic Impact Commission as well as the African Commission’s Human and People’s Rights on AI and other Emerging Technologies, where her insights inform and inspire cross-sector conversations on AI, ethics and society. Dr Wakunuma has facilitated and conducted AI training workshops aimed at parliamentarians, policymakers and civil society organisations in the Global South and has contributed to Zambia’s National AI Strategy by bringing critical perspectives on responsible AI, ethics, inclusion, diversity and equitable AI development, access and use.",
-        topic: "",
-        expanded: false,
-        link: null,
-        affiliate:
-          "Associate Professor at De Montfort University and Co-Director of the Centre for Computing and Social Responsibility",
-      },
-      {
-        name: "Mercy Asiedu",
-        image: "/images/2025/mercyasiedu.png",
-        bio: "Mercy Asiedu is a senior research scientist at Google Research, San Francisco, where she works on using machine learning and generative AI for impact driven research for health. Before that, she was a Schmidt Science Postdoctoral Research Fellow at MIT working on interdisciplinary research projects using generative AI methods to improve mobile ultrasound imaging. She also worked on projects researching the use of language models to improve comprehension of health notes for breast oncology patients. She received her PhD in Biomedical Engineering and a certificate in Global health from Duke University. Her dissertation focused on the research and development of a low-cost imaging device and machine learning algorithms to reduce barriers to cervical cancer screening. She has won several awards for her work including the Inaugural Patrick J. McGovern Tech for Humanity Changemaker Awards, the Lemelson-MIT Graduate Student Inventor Award, and Velji Emerging Leader in Global Health award. Additionally, she is a co-founder of GAPHealth Technologies. She received her bachelor’s degree in Biomedical Engineering from the University of Rochester, and high school degree from Holy Child Secondary School, Cape Coast, Ghana.",
-        topic: "",
-        expanded: false,
-        link: "https://mercynasiedu.com/",
-        affiliate:
-          "Senior Research Scientist at Google Research, San Francisco",
-      }
     ],
     cfp: {
       title: "Trustworthy AI Workshop @ Deep Learning Indaba 2025",
@@ -134,7 +115,8 @@ export const workshops = {
       abstractsubdate: "June 25th, 2025 23:59 AoE",
       notificationdate: "July 28th, 2025",
       submitname: "Microsoft CMT",
-      call_for_reviewers: "In addition to submissions, we’re also seeking volunteers to contribute to the workshop's success by serving as reviewers. Reviewers will be asked to provide thoughtful and constructive feedback on approximately 1-3 submitted papers. If you are interested in volunteering for our Program Committee, please complete the sign-up form at",
+      call_for_reviewers:
+        "In addition to submissions, we’re also seeking volunteers to contribute to the workshop's success by serving as reviewers. Reviewers will be asked to provide thoughtful and constructive feedback on approximately 1-3 submitted papers. If you are interested in volunteering for our Program Committee, please complete the sign-up form at",
       whycmt:
         "The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.",
       submitinstruction:
@@ -152,6 +134,49 @@ export const workshops = {
       tutoriallink:
         "https://www.youtube.com/watch?v=2wNEfoxcRYw&ab_channel=FES-CongressonFoodandEnvironmentalSecurity",
     },
+    panelists: [
+      {
+        name: "Mercy Asiedu",
+        image: "/images/2025/mercyasiedu.png",
+        bio: "Mercy Asiedu is a senior research scientist at Google Research, San Francisco, where she works on using machine learning and generative AI for impact driven research for health. Before that, she was a Schmidt Science Postdoctoral Research Fellow at MIT working on interdisciplinary research projects using generative AI methods to improve mobile ultrasound imaging. She also worked on projects researching the use of language models to improve comprehension of health notes for breast oncology patients. She received her PhD in Biomedical Engineering and a certificate in Global health from Duke University. Her dissertation focused on the research and development of a low-cost imaging device and machine learning algorithms to reduce barriers to cervical cancer screening. She has won several awards for her work including the Inaugural Patrick J. McGovern Tech for Humanity Changemaker Awards, the Lemelson-MIT Graduate Student Inventor Award, and Velji Emerging Leader in Global Health award. Additionally, she is a co-founder of GAPHealth Technologies. She received her bachelor’s degree in Biomedical Engineering from the University of Rochester, and high school degree from Holy Child Secondary School, Cape Coast, Ghana.",
+        topic: "",
+        expanded: false,
+        link: "https://mercynasiedu.com/",
+        affiliate:
+          "Senior Research Scientist at Google Research, San Francisco",
+      },
+    ],
+    isls: [
+      {
+        name: "Kutoma Wakunuma",
+        image: "/images/2025/KutomaWakunuma.jpg",
+        bio: "Dr Kutoma Wakunuma is an Associate Professor at De Montfort University and Co-Director of the Centre for Computing and Social Responsibility. She specialises in the social and ethical implications of emerging technologies, responsible innovation and AI governance in both the Global North and the Global South. She has co-edited influential books including Responsible AI in Africa and Trustworthy AI: African Perspectives. Dr Wakunuma serves as a European Commission Ethics Advisor and Evaluator. She is a member of Centre for AI and Digital Policy (CAIDP) Global Academic Network. Dr Wakunuma is also a member of UNESCO’s Women for Ethical AI as well as UNESCO’s AI Ethics Experts Without Borders. She is recognised among the Top 100 Brilliant Women in AI Ethics in the 2025. Dr Wakunuma is a passionate advocate for an inclusive and globally representative AI discourse and is frequently invited to speak at high-level international forums, including the UNs Science Summit of the General Assembly; the UN Academic Impact Commission as well as the African Commission’s Human and People’s Rights on AI and other Emerging Technologies, where her insights inform and inspire cross-sector conversations on AI, ethics and society. Dr Wakunuma has facilitated and conducted AI training workshops aimed at parliamentarians, policymakers and civil society organisations in the Global South and has contributed to Zambia’s National AI Strategy by bringing critical perspectives on responsible AI, ethics, inclusion, diversity and equitable AI development, access and use.",
+        topic: "",
+        expanded: false,
+        link: null,
+        affiliate:
+          "Associate Professor at De Montfort University and Co-Director of the Centre for Computing and Social Responsibility",
+      },
+      {
+        name: "Damian Eke",
+        image: "/images/2025/damianeke.png",
+        bio: "Damian Eke is an Assistant Prof., University of Nottingham. Damian has a Philosophy of science background with a PhD in Computer Ethics. He has close to two decades of experience and expertise in ethics and governance of data and emerging technologies. He was the data governance coordinator for the EU Human Brain Project and has PI roles on a number of projects working on responsible innovation. His works on ethics and governance of AI in Africa is particularly from a decoloniality perspective.",
+        topic: "",
+        expanded: false,
+        link: null,
+        affiliate: "Assistant Prof at University of Nottingham",
+      },
+      {
+        name: "George Ogoh",
+        image: "/images/2025/georgeogoh.jpg",
+        bio: "George Ogoh is a Senior Research Fellow at the School of Computer Science, University of Nottingham. George has a background in Computing and Information Systems. His research explores the ethical and societal implications of emerging technologies, with a focus on digital responsibility and Responsible Research and Innovation (RRI)/Responsible Innovation. He is particularly interested in embedding ethical considerations into the development, deployment, and use of technology to promote fairness, accountability, and societal benefit.",
+        topic: "",
+        expanded: false,
+        link: null,
+        affiliate:
+          "Senior Research Fellow at the School of Computer Science, University of Nottingham",
+      },
+    ],
     organizers: [
       {
         name: "Miriam Rateike",
@@ -268,6 +293,8 @@ export const workshops = {
         affiliate: null,
       },
     ],
+    panelists: [],
+    isls: [],
     organizers: [
       {
         name: "Aisha Alryeh Mkean Alaagib",
@@ -595,6 +622,8 @@ export const workshops = {
         affiliate: null,
       },
     ],
+    panelists: [],
+    isls: [],
     organizers: [
       {
         name: "Aisha Alryeh Mkean Alaagib",
