@@ -19,7 +19,6 @@ import { isMobile, workshops } from "src/helpers";
 const Workshop = (props) => {
   const { activeWs } = props;
   const [espeakers, setESpeakers] = useState([]);
-  const [eorganizers, setEOrganizers] = useState([]);
   const [eadvisors, setEAdvisors] = useState([]);
   const [eisls, setEIsls] = useState([]);
   const [epanelists, setEPanelists] = useState([]);
@@ -30,18 +29,6 @@ const Workshop = (props) => {
     if (index) {
       const id = Number(index);
       setESpeakers((prev) =>
-        prev?.map((item, i) =>
-          i === id ? { ...item, expanded: !item.expanded } : item,
-        ),
-      );
-    }
-  };
-
-  const toggleExpandO = (e) => {
-    const index = e.currentTarget.getAttribute("id");
-    if (index) {
-      const id = Number(index);
-      setEOrganizers((prev) =>
         prev?.map((item, i) =>
           i === id ? { ...item, expanded: !item.expanded } : item,
         ),
@@ -93,7 +80,6 @@ const Workshop = (props) => {
       });
     }
     setESpeakers(workshops[activeWs].speakers);
-    setEOrganizers(workshops[activeWs].organizers);
     setEAdvisors(workshops[activeWs].advisors);
     setEIsls(workshops[activeWs].isls);
     setEPanelists(workshops[activeWs].panelists);
@@ -545,112 +531,6 @@ const Workshop = (props) => {
             </Container>
           </>
         )}
-        <Box
-          sx={{
-            backgroundColor: "#e6ecda",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            height: isMobile ? 100 : 60,
-            mb: 2,
-          }}
-        >
-          <Stack>
-            <Typography
-              variant={isMobile ? "h3" : "h5"}
-              sx={{
-                fontWeight: 700,
-                color: "#445029",
-              }}
-            >
-              Organizers
-            </Typography>
-          </Stack>
-        </Box>
-        <Container sx={{ mt: 4, mb: 4 }}>
-          <Grid container spacing={4} justifyContent="center">
-            {workshops[activeWs]?.organizers?.map((organizer, index) => (
-              <Grid item xs={isMobile ? 6 : 3} key={index}>
-                <Stack spacing={2}>
-                  {organizer.image && (
-                    <Box sx={{ textAlign: "center" }}>
-                      <Box
-                        component="img"
-                        src={organizer.image}
-                        sx={customStyles.mediaStyles}
-                      />
-                    </Box>
-                  )}
-                  <Stack>
-                    <Typography
-                      onClick={() => handExternalLink(organizer?.link)}
-                      sx={{
-                        fontSize: isMobile ? 30 : 18,
-                        color: "#445029",
-                        cursor: "pointer",
-                      }}
-                    >
-                      {organizer.name}
-                    </Typography>
-                    {organizer.affiliate && (
-                      <Typography
-                        variant="body2"
-                        color="text.secondary"
-                        sx={{
-                          fontSize: isMobile ? 24 : 12,
-                        }}
-                      >
-                        {organizer.affiliate}
-                      </Typography>
-                    )}
-                  </Stack>
-                  {organizer.bio && (
-                    <Box>
-                      <Box
-                        sx={{
-                          height: eorganizers[index]?.expanded
-                            ? "auto"
-                            : organizer.bio?.length >= 400
-                              ? 180
-                              : "auto",
-                          overflow: "hidden",
-                          transition: "height 0.3s ease",
-                        }}
-                      >
-                        <Typography variant="body2" color="text.secondary">
-                          {organizer.bio}
-                        </Typography>
-                      </Box>
-                      {organizer.bio?.length >= 400 && (
-                        <Box>
-                          <Stack
-                            alignItems="center"
-                            onClick={toggleExpandO}
-                            id={`${index}`}
-                            direction="row"
-                            sx={{
-                              float: "right",
-                              cursor: "pointer",
-                            }}
-                          >
-                            <Typography variant="body2">
-                              {eorganizers[index]?.expanded
-                                ? "Read less"
-                                : "Read more"}
-                            </Typography>
-                            <ViewAllIcon
-                              sx={{ fontSize: isMobile ? 25 : 15 }}
-                            />
-                          </Stack>
-                        </Box>
-                      )}
-                    </Box>
-                  )}
-                </Stack>
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
         {workshops[activeWs].advisors?.length > 0 && (
           <>
             <Box

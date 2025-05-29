@@ -9,7 +9,7 @@ const CallForPapers = () => {
   const mainContentRef = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(activeCfp);
 
-  const wsyears = Object.keys(workshops).map((item) => item.slice(-4));
+  const wsyears = [activeCfp];
 
   useEffect(() => {
     if (mainContentRef.current) {

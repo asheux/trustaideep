@@ -42,6 +42,10 @@ const Layout = (props) => {
     navigate("/schedule");
   };
 
+  const handleOpenOrganizers = () => {
+    navigate("/organizers");
+  };
+
   const handleOpenCfp = () => {
     navigate("/call-for-papers");
   };
@@ -84,6 +88,18 @@ const Layout = (props) => {
                     </Typography>
                   </Stack>
                 </Link>
+              </Box>
+              <Box sx={{ flexGrow: 0, mr: 3 }}>
+                <Typography
+                  onClick={handleOpenOrganizers}
+                  sx={{
+                    ...customStyles.wsProfileName,
+                    color: "white",
+                    cursor: "pointer",
+                  }}
+                >
+                  Organizers
+                </Typography>
               </Box>
               <Box sx={{ flexGrow: 0, mr: 3 }}>
                 <Typography

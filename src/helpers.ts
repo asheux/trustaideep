@@ -30,6 +30,7 @@ export const settings = [
 
 export const activeSchedule = "2025";
 export const activeCfp = "2025";
+export const activeOrganizers = "2025";
 export const activePage = "taid2025";
 export const sociallinks = [
   {
@@ -71,6 +72,16 @@ export const workshops = {
         expanded: false,
         link: "https://krvarshney.github.io/",
         affiliate: "Fellow at IBM Research",
+      },
+      {
+        name: "Kutoma Wakunuma",
+        image: "/images/2025/KutomaWakunuma.jpg",
+        bio: "Dr Kutoma Wakunuma is an Associate Professor at De Montfort University and Co-Director of the Centre for Computing and Social Responsibility. She specialises in the social and ethical implications of emerging technologies, responsible innovation and AI governance in both the Global North and the Global South. She has co-edited influential books including Responsible AI in Africa and Trustworthy AI: African Perspectives. Dr Wakunuma serves as a European Commission Ethics Advisor and Evaluator. She is a member of Centre for AI and Digital Policy (CAIDP) Global Academic Network. Dr Wakunuma is also a member of UNESCO’s Women for Ethical AI as well as UNESCO’s AI Ethics Experts Without Borders. She is recognised among the Top 100 Brilliant Women in AI Ethics in the 2025. Dr Wakunuma is a passionate advocate for an inclusive and globally representative AI discourse and is frequently invited to speak at high-level international forums, including the UNs Science Summit of the General Assembly; the UN Academic Impact Commission as well as the African Commission’s Human and People’s Rights on AI and other Emerging Technologies, where her insights inform and inspire cross-sector conversations on AI, ethics and society. Dr Wakunuma has facilitated and conducted AI training workshops aimed at parliamentarians, policymakers and civil society organisations in the Global South and has contributed to Zambia’s National AI Strategy by bringing critical perspectives on responsible AI, ethics, inclusion, diversity and equitable AI development, access and use.",
+        topic: "",
+        expanded: false,
+        link: null,
+        affiliate:
+          "Associate Professor at De Montfort University and Co-Director of the Centre for Computing and Social Responsibility",
       },
     ],
     cfp: {
@@ -148,16 +159,6 @@ export const workshops = {
     ],
     isls: [
       {
-        name: "Kutoma Wakunuma",
-        image: "/images/2025/KutomaWakunuma.jpg",
-        bio: "Dr Kutoma Wakunuma is an Associate Professor at De Montfort University and Co-Director of the Centre for Computing and Social Responsibility. She specialises in the social and ethical implications of emerging technologies, responsible innovation and AI governance in both the Global North and the Global South. She has co-edited influential books including Responsible AI in Africa and Trustworthy AI: African Perspectives. Dr Wakunuma serves as a European Commission Ethics Advisor and Evaluator. She is a member of Centre for AI and Digital Policy (CAIDP) Global Academic Network. Dr Wakunuma is also a member of UNESCO’s Women for Ethical AI as well as UNESCO’s AI Ethics Experts Without Borders. She is recognised among the Top 100 Brilliant Women in AI Ethics in the 2025. Dr Wakunuma is a passionate advocate for an inclusive and globally representative AI discourse and is frequently invited to speak at high-level international forums, including the UNs Science Summit of the General Assembly; the UN Academic Impact Commission as well as the African Commission’s Human and People’s Rights on AI and other Emerging Technologies, where her insights inform and inspire cross-sector conversations on AI, ethics and society. Dr Wakunuma has facilitated and conducted AI training workshops aimed at parliamentarians, policymakers and civil society organisations in the Global South and has contributed to Zambia’s National AI Strategy by bringing critical perspectives on responsible AI, ethics, inclusion, diversity and equitable AI development, access and use.",
-        topic: "",
-        expanded: false,
-        link: null,
-        affiliate:
-          "Associate Professor at De Montfort University and Co-Director of the Centre for Computing and Social Responsibility",
-      },
-      {
         name: "Damian Eke",
         image: "/images/2025/damianeke.png",
         bio: "Damian Eke is an Assistant Prof., University of Nottingham. Damian has a Philosophy of science background with a PhD in Computer Ethics. He has close to two decades of experience and expertise in ethics and governance of data and emerging technologies. He was the data governance coordinator for the EU Human Brain Project and has PI roles on a number of projects working on responsible innovation. His works on ethics and governance of AI in Africa is particularly from a decoloniality perspective.",
@@ -175,6 +176,16 @@ export const workshops = {
         link: null,
         affiliate:
           "Senior Research Fellow at the School of Computer Science, University of Nottingham",
+      },
+      {
+        name: "Kutoma Wakunuma",
+        image: "/images/2025/KutomaWakunuma.jpg",
+        bio: "Dr Kutoma Wakunuma is an Associate Professor at De Montfort University and Co-Director of the Centre for Computing and Social Responsibility. She specialises in the social and ethical implications of emerging technologies, responsible innovation and AI governance in both the Global North and the Global South. She has co-edited influential books including Responsible AI in Africa and Trustworthy AI: African Perspectives. Dr Wakunuma serves as a European Commission Ethics Advisor and Evaluator. She is a member of Centre for AI and Digital Policy (CAIDP) Global Academic Network. Dr Wakunuma is also a member of UNESCO’s Women for Ethical AI as well as UNESCO’s AI Ethics Experts Without Borders. She is recognised among the Top 100 Brilliant Women in AI Ethics in the 2025. Dr Wakunuma is a passionate advocate for an inclusive and globally representative AI discourse and is frequently invited to speak at high-level international forums, including the UNs Science Summit of the General Assembly; the UN Academic Impact Commission as well as the African Commission’s Human and People’s Rights on AI and other Emerging Technologies, where her insights inform and inspire cross-sector conversations on AI, ethics and society. Dr Wakunuma has facilitated and conducted AI training workshops aimed at parliamentarians, policymakers and civil society organisations in the Global South and has contributed to Zambia’s National AI Strategy by bringing critical perspectives on responsible AI, ethics, inclusion, diversity and equitable AI development, access and use.",
+        topic: "",
+        expanded: false,
+        link: null,
+        affiliate:
+          "Associate Professor at De Montfort University and Co-Director of the Centre for Computing and Social Responsibility",
       },
     ],
     organizers: [
