@@ -159,15 +159,6 @@ export const workshops = {
     ],
     isls: [
       {
-        name: "Damian Eke",
-        image: "/images/2025/damianeke.png",
-        bio: "Damian Eke is an Assistant Prof., University of Nottingham. Damian has a Philosophy of science background with a PhD in Computer Ethics. He has close to two decades of experience and expertise in ethics and governance of data and emerging technologies. He was the data governance coordinator for the EU Human Brain Project and has PI roles on a number of projects working on responsible innovation. His works on ethics and governance of AI in Africa is particularly from a decoloniality perspective.",
-        topic: "",
-        expanded: false,
-        link: null,
-        affiliate: "Assistant Prof at University of Nottingham",
-      },
-      {
         name: "George Ogoh",
         image: "/images/2025/georgeogoh.jpg",
         bio: "George Ogoh is a Senior Research Fellow at the School of Computer Science, University of Nottingham. George has a background in Computing and Information Systems. His research explores the ethical and societal implications of emerging technologies, with a focus on digital responsibility and Responsible Research and Innovation (RRI)/Responsible Innovation. He is particularly interested in embedding ethical considerations into the development, deployment, and use of technology to promote fairness, accountability, and societal benefit.",
@@ -178,6 +169,15 @@ export const workshops = {
           "Senior Research Fellow at the School of Computer Science, University of Nottingham",
       },
       {
+        name: "Damian Eke",
+        image: "/images/2025/damianeke.png",
+        bio: "Damian Eke is an Assistant Prof., University of Nottingham. Damian has a Philosophy of science background with a PhD in Computer Ethics. He has close to two decades of experience and expertise in ethics and governance of data and emerging technologies. He was the data governance coordinator for the EU Human Brain Project and has PI roles on a number of projects working on responsible innovation. His works on ethics and governance of AI in Africa is particularly from a decoloniality perspective.",
+        topic: "",
+        expanded: false,
+        link: null,
+        affiliate: "Assistant Prof at University of Nottingham",
+      },
+      {
         name: "Kutoma Wakunuma",
         image: "/images/2025/KutomaWakunuma.jpg",
         bio: "Dr Kutoma Wakunuma is an Associate Professor at De Montfort University and Co-Director of the Centre for Computing and Social Responsibility. She specialises in the social and ethical implications of emerging technologies, responsible innovation and AI governance in both the Global North and the Global South. She has co-edited influential books including Responsible AI in Africa and Trustworthy AI: African Perspectives. Dr Wakunuma serves as a European Commission Ethics Advisor and Evaluator. She is a member of Centre for AI and Digital Policy (CAIDP) Global Academic Network. Dr Wakunuma is also a member of UNESCO’s Women for Ethical AI as well as UNESCO’s AI Ethics Experts Without Borders. She is recognised among the Top 100 Brilliant Women in AI Ethics in the 2025. Dr Wakunuma is a passionate advocate for an inclusive and globally representative AI discourse and is frequently invited to speak at high-level international forums, including the UNs Science Summit of the General Assembly; the UN Academic Impact Commission as well as the African Commission’s Human and People’s Rights on AI and other Emerging Technologies, where her insights inform and inspire cross-sector conversations on AI, ethics and society. Dr Wakunuma has facilitated and conducted AI training workshops aimed at parliamentarians, policymakers and civil society organisations in the Global South and has contributed to Zambia’s National AI Strategy by bringing critical perspectives on responsible AI, ethics, inclusion, diversity and equitable AI development, access and use.",
@@ -186,6 +186,16 @@ export const workshops = {
         link: null,
         affiliate:
           "Associate Professor at De Montfort University and Co-Director of the Centre for Computing and Social Responsibility",
+      },
+      {
+        name: "Simisola Akintoye",
+        image: "/images/2025/simisolaakintoye.jpg",
+        bio: "Dr Simisola Akintoye is an Associate Professor of Law at Northumbria University School of Law. She is interested in multidisciplinary research around legal and ethical regulation of Emerging Technologies and Corporate Sustainability. Her research covers critical issues at the intersection of law and technology including Data Governance, Privacy and Data Protection, Ethics of Emerging Technologies and Responsible Research and Innovation (RRI). Simi is an International Privacy Practitioner and was the Data Protection Officer for the European Union Future and Emerging Technologies Human Brain Project (HBP). She is involved in multi-disciplinary Policy Expert Reports on the future implications of AI and societal benefit. Over the years, Simi has formed consortia that contributes to the furtherance of knowledge, practice and public policy in applied contexts of research, teaching, consultancy and business. Her current research investigates the legal, ethical and socio-cultural implications of AI in Africa towards developing an inclusive, equitable and sustainable AI ecosystem for Africa. Simi is currently the co-chair of the Policy and Governance Working Group developing the National Artificial Intelligence Strategy for Nigeria.",
+        topic: "",
+        expanded: false,
+        link: null,
+        affiliate:
+          "Associate Professor of Law at Northumbria University School of Law",
       },
     ],
     organizers: [

@@ -8,6 +8,7 @@ import { workshops, isMobile, activeOrganizers } from "src/helpers";
 const Organizers = () => {
   const [active, setActive] = useState(activeOrganizers);
   const [organizers, setOrganizers] = useState([]);
+  const [advisors, setAdvisors] = useState([]);
   const mainContentRef = useRef<HTMLDivElement>(null);
 
   const wsyears = Object.keys(workshops).map((item) => item.slice(-4));
@@ -19,7 +20,8 @@ const Organizers = () => {
         behavior: "smooth",
       });
     }
-    setOrganizers(workshops[`taid${active}`]?.organizers);
+    setOrganizers(workshops[`taid${active}`]?.organizers || []);
+    setAdvisors(workshops[`taid${active}`]?.advisors || []);
   }, [active]);
 
   const handleChangeActive = (e) => {
@@ -32,6 +34,18 @@ const Organizers = () => {
   const handExternalLink = (link) => {
     if (link) {
       window.open(link, "_blunk");
+    }
+  };
+
+  const toggleExpandA = (e) => {
+    const index = e.currentTarget.getAttribute("id");
+    if (index) {
+      const id = Number(index);
+      setAdvisors((prev) =>
+        prev?.map((item, i) =>
+          i === id ? { ...item, expanded: !item.expanded } : item,
+        ),
+      );
     }
   };
 
@@ -127,8 +141,31 @@ const Organizers = () => {
               </Box>
             ))}
           </Stack>
-          {!Object.keys(organizers)?.length && (
-            <Box mt={2}>
+          <Box
+            sx={{
+              backgroundColor: "#e6ecda",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              height: isMobile ? 100 : 60,
+              my: 2,
+            }}
+          >
+            <Stack>
+              <Typography
+                variant={isMobile ? "h3" : "h5"}
+                sx={{
+                  fontWeight: 700,
+                  color: "#445029",
+                }}
+              >
+                Organizers
+              </Typography>
+            </Stack>
+          </Box>
+
+          {!organizers?.length && (
+            <Box mt={4} mb={4}>
               <Typography>No organizers for this year.</Typography>
             </Box>
           )}
@@ -200,6 +237,117 @@ const Organizers = () => {
                             >
                               <Typography variant="body2">
                                 {organizers[index]?.expanded
+                                  ? "Read less"
+                                  : "Read more"}
+                              </Typography>
+                              <ViewAllIcon
+                                sx={{ fontSize: isMobile ? 25 : 15 }}
+                              />
+                            </Stack>
+                          </Box>
+                        )}
+                      </Box>
+                    )}
+                  </Stack>
+                </Grid>
+              ))}
+            </Grid>
+          </Container>
+          <Box
+            sx={{
+              backgroundColor: "#e6ecda",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              height: isMobile ? 100 : 60,
+              my: 2,
+            }}
+          >
+            <Stack>
+              <Typography
+                variant={isMobile ? "h3" : "h5"}
+                sx={{
+                  fontWeight: 700,
+                  color: "#445029",
+                }}
+              >
+                Advisory Committee
+              </Typography>
+            </Stack>
+          </Box>
+          {!advisors?.length && (
+            <Box mt={4} mb={4}>
+              <Typography>No no advisory committee for this year.</Typography>
+            </Box>
+          )}
+          <Container sx={{ mt: 4, mb: 4 }}>
+            <Grid container spacing={4} justifyContent="center">
+              {advisors?.map((advisor, index) => (
+                <Grid item xs={isMobile ? 6 : 3} key={index}>
+                  <Stack spacing={2}>
+                    {advisor.image && (
+                      <Box sx={{ textAlign: "center" }}>
+                        <Box
+                          component="img"
+                          src={advisor.image}
+                          sx={customStyles.mediaStyles}
+                        />
+                      </Box>
+                    )}
+                    <Stack>
+                      <Typography
+                        onClick={() => handExternalLink(advisor?.link)}
+                        sx={{
+                          fontSize: isMobile ? 30 : 18,
+                          color: "#445029",
+                          cursor: "pointer",
+                        }}
+                      >
+                        {advisor.name}
+                      </Typography>
+                      {advisor.affiliate && (
+                        <Typography
+                          variant="body2"
+                          color="text.secondary"
+                          sx={{
+                            fontSize: isMobile ? 24 : 12,
+                          }}
+                        >
+                          {advisor.affiliate}
+                        </Typography>
+                      )}
+                    </Stack>
+                    {advisor.bio && (
+                      <Box>
+                        <Box
+                          sx={{
+                            height: advisors[index]?.expanded
+                              ? "auto"
+                              : advisor.bio?.length >= 400
+                                ? 180
+                                : "auto",
+                            overflow: "hidden",
+                            transition: "height 0.3s ease",
+                          }}
+                        >
+                          <Typography variant="body2" color="text.secondary">
+                            {advisor.bio}
+                          </Typography>
+                        </Box>
+                        {advisor.bio?.length >= 400 && (
+                          <Box>
+                            <Stack
+                              alignItems="center"
+                              onClick={toggleExpandA}
+                              id={`${index}`}
+                              direction="row"
+                              sx={{
+                                float: "right",
+                                cursor: "pointer",
+                              }}
+                            >
+                              <Typography variant="body2">
+                                {advisors[index]?.expanded
                                   ? "Read less"
                                   : "Read more"}
                               </Typography>
