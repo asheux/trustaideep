@@ -121,6 +121,28 @@ const CallForPapers = () => {
               </Typography>
             </Box>
           )}
+          <Box
+            sx={{
+              backgroundColor: "#e6ecda",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              height: isMobile ? 100 : 60,
+              my: 2,
+            }}
+          >
+            <Stack>
+              <Typography
+                variant={isMobile ? "h3" : "h5"}
+                sx={{
+                  fontWeight: 700,
+                  color: "#445029",
+                }}
+              >
+                Call for Papers
+              </Typography>
+            </Stack>
+          </Box>
           <Container sx={{ mt: 4, mb: 4 }}>
             <Grid container spacing={2}>
               <Grid item xs={isMobile ? 12 : 8}>
@@ -299,18 +321,6 @@ const CallForPapers = () => {
                       </Typography>
                     </Box>
                   )}
-                  {cfp?.call_for_reviewers && (
-                    <Box>
-                      <Typography
-                        sx={{ fontSize: isMobile ? 33 : 16, fontWeight: 700 }}
-                      >
-                        Call for Reviewers
-                      </Typography>
-                      <Typography sx={{ fontSize: isMobile ? 30 : 14 }}>
-                        {cfp?.call_for_reviewers}
-                      </Typography>
-                    </Box>
-                  )}
                   <Box>
                     <Stack direction="row" alignItems="center" spacing={1}>
                       <Typography
@@ -411,6 +421,48 @@ const CallForPapers = () => {
               </Grid>
             </Grid>
           </Container>
+          <Box
+            sx={{
+              backgroundColor: "#e6ecda",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              height: isMobile ? 100 : 60,
+              my: 2,
+            }}
+          >
+            <Stack>
+              <Typography
+                variant={isMobile ? "h3" : "h5"}
+                sx={{
+                  fontWeight: 700,
+                  color: "#445029",
+                }}
+              >
+                Call for Reviewers
+              </Typography>
+            </Stack>
+          </Box>
+          {cfp?.call_for_reviewers && (
+            <Box>
+              <Typography sx={{ fontSize: isMobile ? 30 : 14 }}>
+                {`${cfp?.call_for_reviewers} `}
+                <span
+                  onClick={() =>
+                    handExternalLink(
+                      "https://docs.google.com/forms/d/e/1FAIpQLScBn1oR-0IjvJi6ymW0ZHcFIN9Y47NMXkHnV0v6Vnxyynwhsg/viewform",
+                    )
+                  }
+                  style={{
+                    ...customStyles.externalLinks,
+                    fontSize: isMobile ? 30 : 14,
+                  }}
+                >
+                  Self-nominate form
+                </span>
+              </Typography>
+            </Box>
+          )}
         </Container>
       </Box>
     </React.Fragment>

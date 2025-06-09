@@ -156,6 +156,16 @@ export const workshops = {
         affiliate:
           "Senior Research Scientist at Google Research, San Francisco",
       },
+      {
+        name: "Nyalleng Moorosi",
+        image: "/images/2025/nyallengmoorosi.jpg",
+        bio: "Nyalleng is a research fellow at The Distributed Artificial Intelligence Research (DAIR) institute. Her research focuses on AI Ethics, specifically, technical and social enhancements that developers make when they build for their communities. Prior to her position at DAIR, she was a research software engineer at Google and a senior researcher at the South African Council for Scientific and Industrial Research. Outside of formal work, she works as an advisor to several humanitarian and scientific institutions. Nyalleng is also a co-founder of the Deep Learning Indaba.",
+        topic: "",
+        expanded: false,
+        link: null,
+        affiliate:
+          "A research fellow at The Distributed Artificial Intelligence Research (DAIR) institute",
+      },
     ],
     isls: [
       {
