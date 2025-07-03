@@ -289,6 +289,16 @@ const CallForPapers = () => {
                       here
                     </span>{" "}
                     before{" "}
+                    {cfp?.old_sub_date && (
+                      <span
+                        style={{
+                          color: "black",
+                          textDecoration: "line-through",
+                        }}
+                      >
+                        {`${cfp?.old_sub_date} `}
+                      </span>
+                    )}
                     <span style={{ color: "red" }}>
                       {cfp?.abstractsubdate}.
                     </span>
@@ -335,10 +345,28 @@ const CallForPapers = () => {
                       <Typography
                         sx={{
                           fontSize: isMobile ? 30 : 14,
-                          color: "red",
                         }}
                       >
-                        {cfp?.abstractsubdate}
+                        {cfp?.old_sub_date ? (
+                          <>
+                            <span
+                              style={{
+                                color: "black",
+                                textDecoration: "line-through",
+                              }}
+                            >
+                              {`${cfp?.old_sub_date} `}
+                            </span>
+                            <span style={{ color: "red" }}>
+                              {cfp?.abstractsubdate}
+                            </span>
+                          </>
+                        ) : (
+                          <span style={{ color: "red" }}>
+                            {cfp?.abstractsubdate}
+                          </span>
+                        )}
+                        .
                       </Typography>
                     </Stack>
                     {cfp?.notificationdate && (
@@ -358,7 +386,25 @@ const CallForPapers = () => {
                             color: "#90a959",
                           }}
                         >
-                          {cfp?.notificationdate}
+                          {cfp?.old_notification_date ? (
+                            <>
+                              <span
+                                style={{
+                                  color: "black",
+                                  textDecoration: "line-through",
+                                }}
+                              >
+                                {`${cfp?.old_notification_date} `}
+                              </span>
+                              <span style={{ color: "#90a959" }}>
+                                {cfp?.notificationdate}
+                              </span>
+                            </>
+                          ) : (
+                            <span style={{ color: "#90a959" }}>
+                              {cfp?.notificationdate}
+                            </span>
+                          )}
                         </Typography>
                       </Stack>
                     )}
