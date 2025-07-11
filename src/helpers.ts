@@ -49,21 +49,11 @@ export const workshops = {
     title: "TrustAI Workshop: Building Public Awareness and Engagement",
     year: 2025,
     datetime: "August 21st, 9 am to 4pm",
-    location: "Deep Learning Indaba 2025, Kigali Rwanda",
+    location: "Deep Learning Indaba 2025",
     locationimage: "/images/2022/indaba.jpg",
     about:
       "Trustworthy AI seeks to ensure that AI systems are aligned with ethical principles, particularly in their societal impact. Given the unique historical and structural challenges of the African continent, it is vital that AI systems are developed to be culturally and ethically relevant, reflecting the continent’s diverse values, and effectively addressing its specific challenges in sectors like healthcare, agriculture, and finance. This full-day workshop offers a platform for researchers to learn, discuss, and engage with the challenges of developing and deploying trustworthy AI systems—especially for and within Africa. This year, the focus is on “Building Public Awareness and Engagement”. By bringing together researchers, ML practitioners, and stakeholders, we aim to strengthen the ecosystem for African centered trustworthy AI. Through this platform, we hope to inspire initiatives that ensure AI development in Africa is trustworthy, inclusive, and impactful, benefiting marginalized communities and fostering a more diverse, culturally relevant global AI landscape.",
     speakers: [
-      {
-        name: "Sanmi Koyejo",
-        image: "/images/2025/sanmik.png",
-        bio: "Sanmi Koyejo is an assistant professor in the Department of Computer Science at Stanford University and a co-founder of Virtue AI. At Stanford, Koyejo leads the Stanford Trustworthy Artificial Intelligence (STAIR) lab, which works to develop the principles and practice of trustworthy AI, focusing on applications to science and healthcare. Koyejo has been the recipient of several awards, including a Skip Ellis Early Career Award, a Presidential Early Career Award for Scientists and Engineers (PECASE), and a Sloan Fellowship. Koyejo serves on the Neural Information Processing Systems Foundation Board, the Association for Health Learning and Inference Board, and as president of the Black in AI Board.",
-        topic: "",
-        expanded: false,
-        link: "https://cs.stanford.edu/~sanmi/index.html",
-        affiliate:
-          "Assistant Professor in the Department of Computer Science at Stanford University",
-      },
       {
         name: "Kush R. Varshney",
         image: "/images/2025/kushvarshney.png",
