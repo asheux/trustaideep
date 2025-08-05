@@ -126,7 +126,7 @@ export const workshops = {
       old_sub_date: "June 25th",
       abstractsubdate: "July 9th, 23:59 AoE",
       old_notification_date: "July 28th",
-      notificationdate: "July 30th, 23:59 AoE",
+      notificationdate: "August 4th, 23:59 AoE",
       submitname: "Microsoft CMT",
       call_for_reviewers:
         "In addition to submissions, we’re also seeking volunteers to contribute to the workshop's success by serving as reviewers. Reviewers will be asked to provide thoughtful and constructive feedback on approximately 1-3 submitted papers. If you are interested in volunteering for our Program Committee, please complete the sign-up form at",
@@ -160,8 +160,8 @@ export const workshops = {
       },
       {
         name: "Orestis Papakyriakopoulos",
-        image: null,
-        bio: "",
+        image: "/images/2025/orestis.jpg",
+        bio: "Orestis Papakyriakopoulos is an Assistant Professor of Societal Computing at the Technical University of Munich and Principal Investigator of the Civic Machines Lab at the TUM Think Tank. His experience spans almost 10 years of interdisciplinary research in academia and industry with a focus in the societal impact of AI, algorithmic fairness, and the development of tools for participatory socio-algorithmic ecosystems. Orestis’ research has won academic awards, including a best paper award in ICML and is  widely cited by researchers, media outlets and policy institutions such as the U.S Federal Trade Commission and the European Commission.",
         topic: "",
         expanded: false,
         link: null,

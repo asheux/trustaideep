@@ -8,6 +8,7 @@ import {
   Box,
   Stack,
   Divider,
+  Alert,
 } from "@mui/material";
 import { Link } from "react-router-dom";
 
@@ -88,7 +89,15 @@ const Workshop = (props) => {
             mt: isMobile ? 10 : -2,
           }}
         >
-          <Stack sx={{ mt: 15, textAlign: "center" }}>
+          <Stack
+            sx={{
+              mt: 15,
+              textAlign: "center",
+              dislay: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
             <Typography
               variant="h2"
               sx={{
@@ -118,6 +127,15 @@ const Workshop = (props) => {
                 {workshops[activeWs].datetime}
               </Typography>
             )}
+            <Box sx={{ mt: 2, textAlign: "center", width: "51.5%" }}>
+              <Alert variant="filled" severity="warning">
+                Please note that workshop attendance at indaba is only possible
+                for registered Indaba attendees. To submit a paper to our
+                workshop, at least one author must be accepted at Indaba at the
+                time of the workshop to be able to present the work on August
+                21st.
+              </Alert>
+            </Box>
           </Stack>
           <Box
             sx={{
@@ -133,7 +151,7 @@ const Workshop = (props) => {
                   padding: 2,
                   width: "50%",
                   boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
-                  mt: 4,
+                  mt: 1,
                 }}
               >
                 {workshops[activeWs].title && (
