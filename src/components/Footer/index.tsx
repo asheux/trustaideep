@@ -5,6 +5,7 @@ import { isMobile, sociallinks } from "src/helpers";
 
 const xicon = "/icons/x.svg";
 const blueskyicon = "/icons/bluesky.png";
+const linkedinicon = "/icons/linkedin.png";
 
 const Footer = () => {
   const sicons = {
@@ -12,6 +13,9 @@ const Footer = () => {
       <Box component="img" src={blueskyicon} sx={{ width: 20, height: 20 }} />
     ),
     twitter: <Box component="img" src={xicon} sx={{ width: 20, height: 20 }} />,
+    linkedin: (
+      <Box component="img" src={linkedinicon} sx={{ width: 20, height: 20 }} />
+    ),
   };
 
   const handleOpenLink = (link) => {

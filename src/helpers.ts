@@ -41,6 +41,10 @@ export const sociallinks = [
     name: "twitter",
     link: "https://x.com/TrustAI_Indaba",
   },
+  {
+    name: "linkedin",
+    link: "https://www.linkedin.com/company/trust-ai-workshop?trk=public_post_feed-actor-name",
+  },
 ];
 
 export const workshops = {
