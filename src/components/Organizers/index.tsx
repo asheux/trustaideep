@@ -110,7 +110,10 @@ const Organizers = () => {
             )}
           </Stack>
         </Box>
-        <Container sx={{ mt: isMobile ? 4 : 2, mb: isMobile ? 8 : 2 }}>
+        <Container
+          sx={{ mt: isMobile ? 4 : 2, mb: isMobile ? 8 : 2 }}
+          maxWidth="xl"
+        >
           <Stack direction="row" alignItems="center" spacing={2} mt={2}>
             {wsyears.map((wssy) => (
               <Box
@@ -169,11 +172,11 @@ const Organizers = () => {
               <Typography>No organizers for this year.</Typography>
             </Box>
           )}
-          <Container sx={{ mt: 4, mb: 4 }}>
+          <Container sx={{ mt: 4, mb: 4 }} maxWidth="xl">
             <Grid container spacing={4} justifyContent="center">
               {organizers?.map((organizer, index) => (
-                <Grid item xs={isMobile ? 6 : 3} key={index}>
-                  <Stack spacing={2}>
+                <Grid item xs={isMobile ? 6 : 2.4} key={index}>
+                  <Stack spacing={2} sx={{width: "100%"}}>
                     {organizer.image && (
                       <Box sx={{ textAlign: "center" }}>
                         <Box
