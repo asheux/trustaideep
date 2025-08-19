@@ -176,7 +176,7 @@ const Organizers = () => {
             <Grid container spacing={4} justifyContent="center">
               {organizers?.map((organizer, index) => (
                 <Grid item xs={isMobile ? 6 : 2.4} key={index}>
-                  <Stack spacing={2} sx={{width: "100%"}}>
+                  <Stack spacing={2} sx={{ width: "100%" }}>
                     {organizer.image && (
                       <Box sx={{ textAlign: "center" }}>
                         <Box

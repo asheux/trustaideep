@@ -352,8 +352,10 @@ export const workshops = {
       {
         starttime: "14:30",
         endtime: "15:10",
-        title: "Keynote with Q&A",
-        abstract: "",
+        title:
+          "Keynote with Q&A: AI's Hippocratic Oath: Is 'Do No Harm' Possible in a World of Biased Data?",
+        abstract:
+          "Applications of artificial intelligence (AI) in healthcare have accelerated exponentially. While AI has the potential to improve healthcare for the better, like other advancements in medical technology, it also has the potential to increase health disparities. Historically, medical technology has not been created with the needs of underserved settings in mind and this has led to limited access in low/middle income countries. Reduced access to these healthcare tools leads to downstream gaps in data used to train machine learning models, and by extension, the potential for machine learning biases, should these models be used on individuals from historically excluded settings. In this talk I will provide an overview of our work on a health equity toolbox for evaluating large language models for surfacing model harms and bias, the development of the AfriMed-QA and TRINDS -  African-focussed health datasets for LLM evaluation and tuning, and the Nteasee Study, a mixed methods study to understand general population and expert perspectives on AI for health in Africa, including a deep dive on algorithmic fairness and colonialism. I will end with brief examples of considerations for beneficial applications of AI for health equity. Overall, I hope to make a case for considering geo-contextual perspectives for the ecosystem of AI development and evaluation for health.",
         speakername: "Mercy Asiedu",
         speakerlink: null,
       },
