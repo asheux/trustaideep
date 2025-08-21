@@ -338,7 +338,7 @@ export const workshops = {
         abstract:
           "This 60-minute interactive hackathon invites participants to critically explore some of the most urgent ethical and societal challenges posed by Artificial Intelligence. Working in small groups, attendees will engage with one of two key themes: (1) Decoloniality of AI – examining how AI systems can reinforce global power imbalances, perpetuate problematic extraction of raw minerals, and embed Western-centric values. (2) Public Awareness of AI Ethics – addressing the challenges of bias, privacy, accountability, and the role of AI in shaping public trust and misinformation. Guided by the Responsible Research and Innovation (RRI) Prompt and Practice Cards, you'll engage in a structured ideation process using the AREA+ framework: Anticipate potential impacts, Reflect on ethical responsibilities, Engage with diverse perspectives, and Act to design responsible responses. Each group will identify key challenges, explore practical consequences, and collaboratively create innovative strategies or conceptual solutions. This session fosters active collaboration, critical thinking, and creative problem-solving, equipping you with a practical framework for addressing AI ethics in real-world contexts.",
         speakername:
-          "Nyalleng Moorosi, Orestis Papakyriakopoulos and Rose Nakasi",
+          "George Ogoh, Damian Eke, Kutoma Wakunuma and Simisola Akintoye",
         speakerlink: null,
       },
       {
