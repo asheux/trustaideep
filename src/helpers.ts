@@ -364,7 +364,7 @@ export const workshops = {
         endtime: "15:50",
         title: "Panel",
         abstract: "",
-        speakername: "",
+        speakername: "Nyalleng Moorosi, Orestis Papakyriakopoulos and Rose Nakasi",
         speakerlink: null,
       },
       {
