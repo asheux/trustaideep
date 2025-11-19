@@ -28,6 +28,45 @@ export const settings = [
   },
 ];
 
+export const papers = [
+  {
+    title: "The Impact of Domain Adaptation on the Activation Space of LLMs.",
+    author:
+      "Benmalek, Assala*; Cintas, Celia; Rateike, Miriam; Speakman, Skyler",
+    link: "",
+  },
+  {
+    title:
+      "Sentiment Analysis Approach for Gender-Based Issues: A Deep Learning Solution for Underserved African Communities",
+    author: "Thatohatsi Tilodi (Student)*",
+    link: "",
+  },
+  {
+    title: "Geopolitics of Tin: The DR Congo in the Age of AI",
+    author: "Laure Gnassou (Experienced Economist)*",
+    link: "",
+  },
+  {
+    title:
+      "Auditing AI Fairness in African Health Diagnostics: A Case Study of CAD4TB at Zambia’s University Teaching Hospital",
+    author:
+      "Billy peter Munyenyembe (Information and Communications University)*; Precious Zulu (Briisp Research Center )",
+    link: "",
+  },
+  {
+    title: "Against 'softmaxing' culture",
+    author: "Daniel Mwesigwa (Cornell University)*",
+    link: "",
+  },
+  {
+    title:
+      "Operationalizing Pluralistic Values in Large Language Model Alignment Reveals Trade-offs in Safety, Inclusivity, and Model Behavior",
+    author:
+      "Dalia Ali (TUM)*; Dora Zhao (Stanford University); Allison Koenecke (Cornell University); Orestis Papakyriakopoulos (TUM)",
+    link: "",
+  },
+];
+
 export const activeSchedule = "2025";
 export const activeCfp = "2025";
 export const activeOrganizers = "2025";
@@ -364,7 +403,8 @@ export const workshops = {
         endtime: "15:50",
         title: "Panel",
         abstract: "",
-        speakername: "Nyalleng Moorosi, Orestis Papakyriakopoulos and Rose Nakasi",
+        speakername:
+          "Nyalleng Moorosi, Orestis Papakyriakopoulos and Rose Nakasi",
         speakerlink: null,
       },
       {

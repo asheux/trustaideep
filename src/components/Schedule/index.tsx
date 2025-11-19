@@ -9,7 +9,7 @@ import {
   Divider,
 } from "@mui/material";
 
-import { workshops, isMobile, activeSchedule } from "src/helpers";
+import { workshops, isMobile, activeSchedule, papers } from "src/helpers";
 
 const Schedule = () => {
   const mainContentRef = useRef<HTMLDivElement>(null);
@@ -159,6 +159,30 @@ const Schedule = () => {
                     >
                       {sch.title}
                     </Typography>
+                    {sch.title === "Contributed Talks with Q&A" && (
+                      <Stack spacing={2}>
+                        {papers.map((paper, index) => (
+                          <Stack key={index}>
+                            <Typography
+                              sx={{
+                                color: "#90a959",
+                                fontSize: isMobile ? 18 : 16,
+                              }}
+                            >
+                              {paper.title}
+                            </Typography>
+                            <Typography
+                              sx={{
+                                fontSize: isMobile ? 16 : 14,
+                                fontStyle: "italic",
+                              }}
+                            >
+                              {paper.author}
+                            </Typography>
+                          </Stack>
+                        ))}
+                      </Stack>
+                    )}
                     {sch.speakername && (
                       <Typography
                         sx={{

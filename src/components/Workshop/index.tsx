@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 // App related imports
 import Footer from "src/components/Footer";
 import { customStyles } from "src/styles";
-import { isMobile, workshops } from "src/helpers";
+import { isMobile, workshops, papers } from "src/helpers";
 
 const Workshop = (props) => {
   const { activeWs } = props;
@@ -535,6 +535,52 @@ const Workshop = (props) => {
             </Container>
           </>
         )}
+        <Box
+          sx={{
+            backgroundColor: "#e6ecda",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: isMobile ? 100 : 60,
+            mb: 2,
+          }}
+        >
+          <Stack>
+            <Typography
+              variant={isMobile ? "h3" : "h5"}
+              sx={{
+                fontWeight: 700,
+                color: "#445029",
+              }}
+            >
+              Accepted Papers
+            </Typography>
+          </Stack>
+        </Box>
+        <Container sx={{ mt: 4, mb: 4 }}>
+          <Stack spacing={2}>
+            {papers.map((paper, index) => (
+              <Stack key={index}>
+                <Typography
+                  sx={{
+                    color: "#90a959",
+                    fontSize: isMobile ? 18 : 16,
+                  }}
+                >
+                  {paper.title}
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: isMobile ? 16 : 14,
+                    fontStyle: "italic",
+                  }}
+                >
+                  {paper.author}
+                </Typography>
+              </Stack>
+            ))}
+          </Stack>
+        </Container>
         <Box
           sx={{
             backgroundColor: "#e6ecda",
