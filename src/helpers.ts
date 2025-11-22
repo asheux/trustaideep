@@ -31,38 +31,35 @@ export const settings = [
 export const papers = [
   {
     title: "The Impact of Domain Adaptation on the Activation Space of LLMs.",
-    author:
-      "Benmalek, Assala*; Cintas, Celia; Rateike, Miriam; Speakman, Skyler",
+    author: "Assala Benmalek, Celia Cintas, Miriam Rateike, Skyler Speakman",
     link: "",
   },
   {
     title:
       "Sentiment Analysis Approach for Gender-Based Issues: A Deep Learning Solution for Underserved African Communities",
-    author: "Thatohatsi Tilodi (Student)*",
+    author: "Thatohatsi Tilodi",
     link: "",
   },
   {
     title: "Geopolitics of Tin: The DR Congo in the Age of AI",
-    author: "Laure Gnassou (Experienced Economist)*",
+    author: "Laure Gnassou",
     link: "",
   },
   {
     title:
       "Auditing AI Fairness in African Health Diagnostics: A Case Study of CAD4TB at Zambia’s University Teaching Hospital",
-    author:
-      "Billy peter Munyenyembe (Information and Communications University)*; Precious Zulu (Briisp Research Center )",
+    author: "Billy Peter Munyenyembe, Precious Zulu",
     link: "",
   },
   {
     title: "Against 'softmaxing' culture",
-    author: "Daniel Mwesigwa (Cornell University)*",
+    author: "Daniel Mwesigwa",
     link: "",
   },
   {
     title:
       "Operationalizing Pluralistic Values in Large Language Model Alignment Reveals Trade-offs in Safety, Inclusivity, and Model Behavior",
-    author:
-      "Dalia Ali (TUM)*; Dora Zhao (Stanford University); Allison Koenecke (Cornell University); Orestis Papakyriakopoulos (TUM)",
+    author: "Dalia Ali, Dora Zhao, Allison Koenecke, Orestis Papakyriakopoulos",
     link: "",
   },
 ];
