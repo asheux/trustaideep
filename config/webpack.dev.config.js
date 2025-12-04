@@ -24,9 +24,6 @@ module.exports = merge(common(), {
     minimize: false,
   },
   plugins: [
-    new webpack.DefinePlugin({
-      'process.env.TAID_DEPLOY_ENVIRONMENT': JSON.stringify('development'),
-    }),
     new ReactRefreshPlugin(),
     new webpack.ProgressPlugin({
       entries: true,

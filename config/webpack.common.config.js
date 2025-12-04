@@ -8,11 +8,14 @@ const webpack = require('webpack')
 const dotenv = require('dotenv');
 const path = require('./paths')
 
-module.exports = () => {
-  const env = dotenv.config().parsed;
-  const isDev = process.env.TAID_DEPLOY_ENVIRONMENT === 'development';
+dotenv.config();
 
-  
+const deployEnv =
+  process.env.TAID_DEPLOY_ENVIRONMENT ||
+  (process.env.NODE_ENV === 'development' ? 'development' : 'production');
+const publicPath = process.env.PUBLIC_URL || '/';
+
+module.exports = () => {
   return {
     entry: {
       index: path.entry,
@@ -21,7 +24,7 @@ module.exports = () => {
       filename: '[name].[contenthash].js',
       path: path.build,
       clean: true,
-      publicPath: '/',
+      publicPath,
     },
     optimization: {
       moduleIds: 'deterministic',
@@ -61,7 +64,8 @@ module.exports = () => {
         }],
       }),
       new webpack.DefinePlugin({
-        'process.env.TAID_DEPLOY_ENVIRONMENT': JSON.stringify(process.env.TAID_DEPLOY_ENVIRONMENT)
+        'process.env.TAID_DEPLOY_ENVIRONMENT': JSON.stringify(deployEnv),
+        'process.env.PUBLIC_URL': JSON.stringify(publicPath),
       })
     ],
     module: {

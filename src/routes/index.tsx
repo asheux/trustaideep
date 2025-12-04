@@ -15,7 +15,7 @@ import Layout from "src/components/Layout";
 import { Spinner } from "src/commons/Loader";
 import "src/main.css";
 
-const router = createBrowserRouter([
+const routes = [
   {
     path: "/",
     element: <Layout />,
@@ -39,7 +39,22 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+];
+
+const normalizeBaseName = (basePath: string) => {
+  if (!basePath) {
+    return "/";
+  }
+
+  const withLeadingSlash = basePath.startsWith("/")
+    ? basePath
+    : `/${basePath}`;
+
+  return withLeadingSlash.replace(/\/+$/, "") || "/";
+};
+
+const basename = normalizeBaseName(process.env.PUBLIC_URL || "/");
+const router = createBrowserRouter(routes, { basename });
 
 const AppRoutes = () => {
   return (
